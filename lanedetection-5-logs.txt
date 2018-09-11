@@ -1,0 +1,1281 @@
+2018-09-10 20:00:28,042 INFO - Preparing to run TaskInstance <TaskInstance: hc167/projects/lanedetection/5 (id: nNzv4xy4jvwDJ55pyuXnV4)
+2018-09-10 20:00:28,067 INFO - Starting attempt 1
+2018-09-10 20:00:28,078 INFO - Downloading and setting up data sources
+2018-09-10 20:00:28,215 INFO - Pulling Docker image: floydhub/tensorflow:1.8.0-gpu.cuda9cudnn7-py3_aws.31
+2018-09-10 20:00:34,252 INFO - Starting container...
+2018-09-10 20:00:34,780 INFO - 
+################################################################################
+
+2018-09-10 20:00:34,780 INFO - Run Output:
+2018-09-10 20:00:37,471 INFO - Starting services.
+2018-09-10 20:01:45,564 INFO - TensorFlow Version: 1.8.0
+2018-09-10 20:01:45,656 INFO - 2018-09-11 03:01:45.655379: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-09-10 20:01:45,656 INFO - 2018-09-11 03:01:45.655886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties:
+2018-09-10 20:01:45,656 INFO - name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+2018-09-10 20:01:45,657 INFO - pciBusID: 0000:00:1e.0
+2018-09-10 20:01:45,657 INFO - totalMemory: 15.78GiB freeMemory: 15.37GiB
+2018-09-10 20:01:45,657 INFO - 2018-09-11 03:01:45.655925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-09-10 20:02:01,816 INFO - 2018-09-11 03:02:01.814856: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-10 20:02:01,816 INFO - 2018-09-11 03:02:01.814938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-09-10 20:02:01,816 INFO - 2018-09-11 03:02:01.814958: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-09-10 20:02:01,817 INFO - 2018-09-11 03:02:01.816046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/device:GPU:0 with 14441 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+2018-09-10 20:02:01,969 INFO - 2018-09-11 03:02:01.968108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-09-10 20:02:01,969 INFO - 2018-09-11 03:02:01.968219: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-10 20:02:01,969 INFO - 2018-09-11 03:02:01.968248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-09-10 20:02:01,969 INFO - 2018-09-11 03:02:01.968275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-09-10 20:02:01,970 INFO - 2018-09-11 03:02:01.968427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/device:GPU:0 with 14441 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+2018-09-10 20:02:01,970 INFO - Default GPU Device: /device:GPU:0
+2018-09-10 20:02:01,981 INFO - 2018-09-11 03:02:01.980586: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-09-10 20:02:01,981 INFO - 2018-09-11 03:02:01.980640: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-10 20:02:01,981 INFO - 2018-09-11 03:02:01.980669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-09-10 20:02:01,981 INFO - 2018-09-11 03:02:01.980696: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-09-10 20:02:01,981 INFO - 2018-09-11 03:02:01.980832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14441 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+2018-09-10 20:02:01,985 INFO - Tests Passed
+2018-09-10 20:02:23,796 INFO - Tests Passed
+2018-09-10 20:02:23,803 INFO - WARNING:tensorflow:From main.py:108: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+2018-09-10 20:02:23,803 INFO - Instructions for updating:
+2018-09-10 20:02:23,803 INFO - 
+2018-09-10 20:02:23,803 INFO - Future major versions of TensorFlow will allow gradients to flow
+2018-09-10 20:02:23,804 INFO - into the labels input on backprop by default.
+2018-09-10 20:02:23,804 INFO - 
+2018-09-10 20:02:23,804 INFO - See @{tf.nn.softmax_cross_entropy_with_logits_v2}.
+2018-09-10 20:02:23,804 INFO - 
+2018-09-10 20:02:24,385 INFO - 2018-09-11 03:02:24.384527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-09-10 20:02:24,385 INFO - 2018-09-11 03:02:24.384604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-10 20:02:24,386 INFO - 2018-09-11 03:02:24.384636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-09-10 20:02:24,386 INFO - 2018-09-11 03:02:24.384667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-09-10 20:02:24,386 INFO - 2018-09-11 03:02:24.384825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14441 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+2018-09-10 20:02:26,256 INFO - Tests Passed
+2018-09-10 20:02:26,259 INFO - 2018-09-11 03:02:26.258046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-09-10 20:02:26,259 INFO - 2018-09-11 03:02:26.258124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-10 20:02:26,259 INFO - 2018-09-11 03:02:26.258150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-09-10 20:02:26,259 INFO - 2018-09-11 03:02:26.258172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-09-10 20:02:26,259 INFO - 2018-09-11 03:02:26.258301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14441 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+2018-09-10 20:02:26,266 INFO - Tests Passed
+2018-09-10 20:02:59,038 INFO - other data: 0.00B [00:00, ?B/s]other data:   0%|          | 8.19k/471M [00:01<17:38:16, 7.42kB/s]other data:   0%|          | 24.6k/471M [00:01<12:43:05, 10.3kB/s]other data:   0%|          | 57.3k/471M [00:01<9:05:17, 14.4kB/s] other data:   0%|          | 73.7k/471M [00:01<6:43:59, 19.4kB/s]other data:   0%|          | 123k/471M [00:01<4:50:13, 27.0kB/s] other data:   0%|          | 164k/471M [00:01<3:32:02, 37.0kB/s]other data:   0%|          | 229k/471M [00:02<2:33:59, 51.0kB/s]other data:   0%|          | 303k/471M [00:02<1:52:44, 69.6kB/s]other data:   0%|          | 385k/471M [00:02<1:23:21, 94.1kB/s]other data:   0%|          | 492k/471M [00:02<1:01:46, 127kB/s] other data:   0%|          | 598k/471M [00:02<46:39, 168kB/s]  other data:   0%|          | 737k/471M [00:02<35:16, 222kB/s]other data:   0%|          | 893k/471M [00:02<27:01, 290kB/s]other data:   0%|          | 1.05M/471M [00:03<21:15, 369kB/s]other data:   0%|          | 1.24M/471M [00:03<16:48, 466kB/s]other data:   0%|          | 1.45M/471M [00:03<13:28, 581kB/s]other data:   0%|          | 1.71M/471M [00:03<10:48, 723kB/s]other data:   0%|          | 2.04M/471M [00:03<08:40, 901kB/s]other data:   1%|          | 2.41M/471M [00:03<07:03, 1.11MB/s]other data:   1%|          | 2.86M/471M [00:04<05:44, 1.36MB/s]other data:   1%|          | 3.29M/471M [00:04<04:51, 1.61MB/s]other data:   1%|          | 3.69M/471M [00:04<04:17, 1.81MB/s]other data:   1%|          | 4.13M/471M [00:04<03:50, 2.03MB/s]other data:   1%|          | 4.56M/471M [00:04<03:21, 2.31MB/s]other data:   1%|          | 5.01M/471M [00:04<03:09, 2.46MB/s]other data:   1%|          | 5.49M/471M [00:04<02:57, 2.62MB/s]other data:   1%|▏         | 5.97M/471M [00:05<02:57, 2.62MB/s]other data:   1%|▏         | 6.46M/471M [00:05<02:48, 2.76MB/s]other data:   1%|▏         | 6.95M/471M [00:05<02:42, 2.86MB/s]other data:   2%|▏         | 7.44M/471M [00:05<02:37, 2.94MB/s]other data:   2%|▏         | 7.92M/471M [00:05<02:26, 3.16MB/s]other data:   2%|▏         | 8.43M/471M [00:05<02:32, 3.03MB/s]other data:   2%|▏         | 8.91M/471M [00:06<02:22, 3.23MB/s]other data:   2%|▏         | 9.42M/471M [00:06<02:30, 3.07MB/s]other data:   2%|▏         | 9.91M/471M [00:06<02:20, 3.28MB/s]other data:   2%|▏         | 10.4M/471M [00:06<02:29, 3.09MB/s]other data:   2%|▏         | 10.9M/471M [00:06<02:19, 3.29MB/s]other data:   2%|▏         | 11.4M/471M [00:06<02:28, 3.09MB/s]other data:   3%|▎         | 11.9M/471M [00:06<02:19, 3.29MB/s]other data:   3%|▎         | 12.4M/471M [00:07<02:28, 3.10MB/s]other data:   3%|▎         | 12.9M/471M [00:07<02:25, 3.15MB/s]other data:   3%|▎         | 13.4M/471M [00:07<02:17, 3.34MB/s]other data:   3%|▎         | 13.9M/471M [00:07<02:26, 3.12MB/s]other data:   3%|▎         | 14.4M/471M [00:07<02:24, 3.17MB/s]other data:   3%|▎         | 14.9M/471M [00:07<02:16, 3.34MB/s]other data:   3%|▎         | 15.4M/471M [00:08<02:24, 3.14MB/s]other data:   3%|▎         | 15.9M/471M [00:08<02:23, 3.18MB/s]other data:   3%|▎         | 16.4M/471M [00:08<02:15, 3.35MB/s]other data:   4%|▎         | 16.9M/471M [00:08<02:24, 3.15MB/s]other data:   4%|▎         | 17.4M/471M [00:08<02:23, 3.17MB/s]other data:   4%|▍         | 17.9M/471M [00:08<02:21, 3.20MB/s]other data:   4%|▍         | 18.4M/471M [00:08<02:14, 3.36MB/s]other data:   4%|▍         | 18.9M/471M [00:09<02:15, 3.34MB/s]other data:   4%|▍         | 19.4M/471M [00:09<02:23, 3.14MB/s]other data:   4%|▍         | 19.9M/471M [00:09<02:22, 3.16MB/s]other data:   4%|▍         | 20.4M/471M [00:09<02:21, 3.19MB/s]other data:   4%|▍         | 20.9M/471M [00:09<02:19, 3.22MB/s]other data:   5%|▍         | 21.4M/471M [00:09<02:19, 3.22MB/s]other data:   5%|▍         | 21.9M/471M [00:10<02:18, 3.24MB/s]other data:   5%|▍         | 22.4M/471M [00:10<02:08, 3.49MB/s]other data:   5%|▍         | 22.9M/471M [00:10<02:14, 3.33MB/s]other data:   5%|▍         | 23.4M/471M [00:10<02:15, 3.31MB/s]other data:   5%|▌         | 23.9M/471M [00:10<02:22, 3.14MB/s]other data:   5%|▌         | 24.4M/471M [00:10<02:20, 3.18MB/s]other data:   5%|▌         | 24.9M/471M [00:11<02:12, 3.38MB/s]other data:   5%|▌         | 25.5M/471M [00:11<02:20, 3.17MB/s]other data:   6%|▌         | 26.0M/471M [00:11<02:19, 3.20MB/s]other data:   6%|▌         | 26.5M/471M [00:11<02:18, 3.20MB/s]other data:   6%|▌         | 27.0M/471M [00:11<02:17, 3.22MB/s]other data:   6%|▌         | 27.5M/471M [00:11<02:17, 3.24MB/s]other data:   6%|▌         | 28.0M/471M [00:11<02:09, 3.43MB/s]other data:   6%|▌         | 28.5M/471M [00:12<02:17, 3.23MB/s]other data:   6%|▌         | 29.0M/471M [00:12<02:16, 3.24MB/s]other data:   6%|▋         | 29.5M/471M [00:12<02:16, 3.23MB/s]other data:   6%|▋         | 30.0M/471M [00:12<02:15, 3.25MB/s]other data:   6%|▋         | 30.5M/471M [00:12<02:07, 3.45MB/s]other data:   7%|▋         | 31.0M/471M [00:12<02:16, 3.22MB/s]other data:   7%|▋         | 31.5M/471M [00:13<02:15, 3.24MB/s]other data:   7%|▋         | 32.1M/471M [00:13<02:07, 3.44MB/s]other data:   7%|▋         | 32.6M/471M [00:13<02:16, 3.22MB/s]other data:   7%|▋         | 33.1M/471M [00:13<02:14, 3.27MB/s]other data:   7%|▋         | 33.6M/471M [00:13<02:05, 3.49MB/s]other data:   7%|▋         | 34.2M/471M [00:13<02:12, 3.30MB/s]other data:   7%|▋         | 34.7M/471M [00:13<02:08, 3.38MB/s]other data:   7%|▋         | 35.3M/471M [00:14<02:06, 3.44MB/s]other data:   8%|▊         | 35.9M/471M [00:14<01:56, 3.73MB/s]other data:   8%|▊         | 36.5M/471M [00:14<01:44, 4.17MB/s]other data:   8%|▊         | 36.9M/471M [00:14<01:46, 4.06MB/s]other data:   8%|▊         | 37.1M/471M [00:14<02:27, 2.95MB/s]other data:   8%|▊         | 37.8M/471M [00:14<02:13, 3.24MB/s]other data:   8%|▊         | 38.4M/471M [00:14<01:57, 3.67MB/s]other data:   8%|▊         | 39.1M/471M [00:15<01:50, 3.90MB/s]other data:   8%|▊         | 39.9M/471M [00:15<01:35, 4.49MB/s]other data:   9%|▊         | 40.4M/471M [00:15<01:35, 4.52MB/s]other data:   9%|▊         | 40.6M/471M [00:15<02:13, 3.23MB/s]other data:   9%|▉         | 41.4M/471M [00:15<01:53, 3.79MB/s]other data:   9%|▉         | 42.2M/471M [00:15<01:44, 4.09MB/s]other data:   9%|▉         | 43.0M/471M [00:15<01:36, 4.42MB/s]other data:   9%|▉         | 43.9M/471M [00:15<01:24, 5.07MB/s]other data:   9%|▉         | 44.5M/471M [00:16<01:23, 5.12MB/s]other data:  10%|▉         | 44.8M/471M [00:16<01:55, 3.68MB/s]other data:  10%|▉         | 45.6M/471M [00:16<01:38, 4.33MB/s]other data:  10%|▉         | 46.6M/471M [00:16<01:23, 5.06MB/s]other data:  10%|█         | 47.2M/471M [00:16<01:20, 5.25MB/s]other data:  10%|█         | 47.5M/471M [00:16<01:47, 3.94MB/s]other data:  10%|█         | 48.5M/471M [00:16<01:31, 4.61MB/s]other data:  11%|█         | 49.5M/471M [00:16<01:17, 5.45MB/s]other data:  11%|█         | 50.2M/471M [00:16<01:14, 5.62MB/s]other data:  11%|█         | 50.5M/471M [00:17<01:37, 4.29MB/s]other data:  11%|█         | 51.5M/471M [00:17<01:27, 4.81MB/s]other data:  11%|█         | 52.6M/471M [00:17<01:19, 5.28MB/s]other data:  11%|█▏        | 53.7M/471M [00:17<01:13, 5.69MB/s]other data:  12%|█▏        | 54.8M/471M [00:17<01:05, 6.37MB/s]other data:  12%|█▏        | 55.9M/471M [00:17<00:57, 7.25MB/s]other data:  12%|█▏        | 56.7M/471M [00:17<00:57, 7.14MB/s]other data:  12%|█▏        | 57.1M/471M [00:18<01:21, 5.08MB/s]other data:  12%|█▏        | 58.3M/471M [00:18<01:09, 5.90MB/s]other data:  13%|█▎        | 59.4M/471M [00:18<00:59, 6.91MB/s]other data:  13%|█▎        | 60.3M/471M [00:18<00:58, 7.03MB/s]other data:  13%|█▎        | 60.7M/471M [00:18<01:19, 5.15MB/s]other data:  13%|█▎        | 62.0M/471M [00:18<01:10, 5.79MB/s]other data:  13%|█▎        | 63.2M/471M [00:18<01:04, 6.36MB/s]other data:  14%|█▎        | 64.5M/471M [00:18<00:56, 7.25MB/s]other data:  14%|█▍        | 65.8M/471M [00:19<00:49, 8.24MB/s]other data:  14%|█▍        | 66.8M/471M [00:19<00:49, 8.21MB/s]other data:  14%|█▍        | 67.2M/471M [00:19<01:08, 5.92MB/s]other data:  15%|█▍        | 68.6M/471M [00:19<00:58, 6.87MB/s]other data:  15%|█▍        | 70.0M/471M [00:19<00:49, 8.02MB/s]other data:  15%|█▌        | 71.0M/471M [00:19<00:48, 8.18MB/s]other data:  15%|█▌        | 71.4M/471M [00:19<01:05, 6.13MB/s]other data:  15%|█▌        | 72.9M/471M [00:19<00:55, 7.14MB/s]other data:  16%|█▌        | 74.3M/471M [00:19<00:47, 8.37MB/s]other data:  16%|█▌        | 75.4M/471M [00:20<00:46, 8.54MB/s]other data:  16%|█▌        | 75.9M/471M [00:20<01:02, 6.37MB/s]other data:  16%|█▋        | 77.4M/471M [00:20<00:52, 7.43MB/s]other data:  17%|█▋        | 78.9M/471M [00:20<00:44, 8.73MB/s]other data:  17%|█▋        | 80.0M/471M [00:20<00:43, 8.92MB/s]other data:  17%|█▋        | 80.5M/471M [00:20<00:59, 6.62MB/s]other data:  17%|█▋        | 82.1M/471M [00:20<00:50, 7.76MB/s]other data:  18%|█▊        | 83.7M/471M [00:20<00:42, 9.02MB/s]other data:  18%|█▊        | 84.8M/471M [00:21<00:42, 9.13MB/s]other data:  18%|█▊        | 85.3M/471M [00:21<00:57, 6.70MB/s]other data:  18%|█▊        | 86.8M/471M [00:21<00:48, 7.84MB/s]other data:  19%|█▉        | 88.4M/471M [00:21<00:42, 9.09MB/s]other data:  19%|█▉        | 89.5M/471M [00:21<00:41, 9.18MB/s]other data:  19%|█▉        | 90.0M/471M [00:21<00:56, 6.72MB/s]other data:  19%|█▉        | 91.6M/471M [00:21<00:48, 7.86MB/s]other data:  20%|█▉        | 93.1M/471M [00:21<00:41, 9.09MB/s]other data:  20%|██        | 94.2M/471M [00:21<00:40, 9.21MB/s]other data:  20%|██        | 94.7M/471M [00:22<00:55, 6.73MB/s]other data:  20%|██        | 96.3M/471M [00:22<00:47, 7.88MB/s]other data:  21%|██        | 97.9M/471M [00:22<00:40, 9.11MB/s]other data:  21%|██        | 99.0M/471M [00:22<00:40, 9.22MB/s]other data:  21%|██        | 99.5M/471M [00:22<00:55, 6.74MB/s]other data:  21%|██▏       | 101M/471M [00:22<00:46, 7.88MB/s] other data:  22%|██▏       | 103M/471M [00:22<00:40, 9.11MB/s]other data:  22%|██▏       | 104M/471M [00:22<00:39, 9.22MB/s]other data:  22%|██▏       | 104M/471M [00:22<00:54, 6.75MB/s]other data:  22%|██▏       | 106M/471M [00:23<00:46, 7.89MB/s]other data:  23%|██▎       | 107M/471M [00:23<00:39, 9.11MB/s]other data:  23%|██▎       | 108M/471M [00:23<00:39, 9.23MB/s]other data:  23%|██▎       | 109M/471M [00:23<00:53, 6.74MB/s]other data:  23%|██▎       | 111M/471M [00:23<00:45, 7.89MB/s]other data:  24%|██▍       | 112M/471M [00:23<00:39, 9.11MB/s]other data:  24%|██▍       | 113M/471M [00:23<00:38, 9.22MB/s]other data:  24%|██▍       | 114M/471M [00:23<00:52, 6.74MB/s]other data:  24%|██▍       | 115M/471M [00:24<00:45, 7.89MB/s]other data:  25%|██▍       | 117M/471M [00:24<00:38, 9.11MB/s]other data:  25%|██▌       | 118M/471M [00:24<00:38, 9.22MB/s]other data:  25%|██▌       | 118M/471M [00:24<00:53, 6.64MB/s]other data:  25%|██▌       | 120M/471M [00:24<00:45, 7.76MB/s]other data:  26%|██▌       | 122M/471M [00:24<00:38, 9.05MB/s]other data:  26%|██▌       | 123M/471M [00:24<00:37, 9.18MB/s]other data:  26%|██▌       | 123M/471M [00:24<00:52, 6.61MB/s]other data:  26%|██▋       | 125M/471M [00:24<00:44, 7.86MB/s]other data:  27%|██▋       | 126M/471M [00:25<00:38, 8.98MB/s]other data:  27%|██▋       | 127M/471M [00:25<00:37, 9.08MB/s]other data:  27%|██▋       | 128M/471M [00:25<00:51, 6.69MB/s]other data:  27%|██▋       | 129M/471M [00:25<00:43, 7.94MB/s]other data:  28%|██▊       | 131M/471M [00:25<00:37, 9.05MB/s]other data:  28%|██▊       | 132M/471M [00:25<00:37, 9.14MB/s]other data:  28%|██▊       | 133M/471M [00:25<00:50, 6.71MB/s]other data:  28%|██▊       | 134M/471M [00:25<00:42, 7.95MB/s]other data:  29%|██▉       | 136M/471M [00:26<00:37, 9.04MB/s]other data:  29%|██▉       | 137M/471M [00:26<00:36, 9.19MB/s]other data:  29%|██▉       | 137M/471M [00:26<00:49, 6.72MB/s]other data:  29%|██▉       | 139M/471M [00:26<00:41, 7.96MB/s]other data:  30%|██▉       | 140M/471M [00:26<00:36, 9.05MB/s]other data:  30%|███       | 142M/471M [00:26<00:35, 9.20MB/s]other data:  30%|███       | 142M/471M [00:26<00:49, 6.71MB/s]other data:  30%|███       | 144M/471M [00:26<00:41, 7.87MB/s]other data:  31%|███       | 145M/471M [00:26<00:35, 9.08MB/s]other data:  31%|███       | 146M/471M [00:27<00:35, 9.22MB/s]other data:  31%|███       | 147M/471M [00:27<00:48, 6.72MB/s]other data:  32%|███▏      | 148M/471M [00:27<00:40, 7.88MB/s]other data:  32%|███▏      | 150M/471M [00:27<00:35, 9.09MB/s]other data:  32%|███▏      | 151M/471M [00:27<00:34, 9.22MB/s]other data:  32%|███▏      | 152M/471M [00:27<00:47, 6.72MB/s]other data:  33%|███▎      | 153M/471M [00:27<00:40, 7.88MB/s]other data:  33%|███▎      | 155M/471M [00:27<00:34, 9.09MB/s]other data:  33%|███▎      | 156M/471M [00:27<00:34, 9.22MB/s]other data:  33%|███▎      | 156M/471M [00:28<00:46, 6.73MB/s]other data:  34%|███▎      | 158M/471M [00:28<00:39, 7.89MB/s]other data:  34%|███▍      | 159M/471M [00:28<00:34, 9.09MB/s]other data:  34%|███▍      | 161M/471M [00:28<00:33, 9.22MB/s]other data:  34%|███▍      | 161M/471M [00:28<00:46, 6.69MB/s]other data:  35%|███▍      | 163M/471M [00:28<00:39, 7.88MB/s]other data:  35%|███▍      | 164M/471M [00:28<00:33, 9.08MB/s]other data:  35%|███▌      | 165M/471M [00:28<00:33, 9.21MB/s]other data:  35%|███▌      | 166M/471M [00:29<00:45, 6.71MB/s]other data:  36%|███▌      | 167M/471M [00:29<00:38, 7.84MB/s]other data:  36%|███▌      | 169M/471M [00:29<00:33, 9.10MB/s]other data:  36%|███▌      | 170M/471M [00:29<00:32, 9.19MB/s]other data:  36%|███▌      | 170M/471M [00:29<00:44, 6.70MB/s]other data:  37%|███▋      | 172M/471M [00:29<00:38, 7.84MB/s]other data:  37%|███▋      | 174M/471M [00:29<00:32, 9.11MB/s]other data:  37%|███▋      | 175M/471M [00:29<00:32, 9.19MB/s]other data:  37%|███▋      | 175M/471M [00:29<00:44, 6.71MB/s]other data:  38%|███▊      | 177M/471M [00:30<00:36, 7.96MB/s]other data:  38%|███▊      | 178M/471M [00:30<00:32, 9.06MB/s]other data:  38%|███▊      | 179M/471M [00:30<00:31, 9.16MB/s]other data:  38%|███▊      | 180M/471M [00:30<00:43, 6.70MB/s]other data:  39%|███▊      | 181M/471M [00:30<00:36, 7.95MB/s]other data:  39%|███▉      | 183M/471M [00:30<00:31, 9.03MB/s]other data:  39%|███▉      | 184M/471M [00:30<00:31, 9.18MB/s]other data:  39%|███▉      | 185M/471M [00:30<00:42, 6.71MB/s]other data:  40%|███▉      | 186M/471M [00:31<00:36, 7.89MB/s]other data:  40%|███▉      | 188M/471M [00:31<00:31, 9.08MB/s]other data:  40%|████      | 189M/471M [00:31<00:30, 9.21MB/s]other data:  40%|████      | 189M/471M [00:31<00:41, 6.72MB/s]other data:  41%|████      | 191M/471M [00:31<00:35, 7.90MB/s]other data:  41%|████      | 193M/471M [00:31<00:30, 9.08MB/s]other data:  41%|████      | 194M/471M [00:31<00:30, 9.22MB/s]other data:  41%|████      | 194M/471M [00:31<00:41, 6.71MB/s]other data:  42%|████▏     | 196M/471M [00:31<00:34, 7.90MB/s]other data:  42%|████▏     | 197M/471M [00:32<00:30, 9.08MB/s]other data:  42%|████▏     | 198M/471M [00:32<00:29, 9.21MB/s]other data:  42%|████▏     | 199M/471M [00:32<00:40, 6.72MB/s]other data:  43%|████▎     | 200M/471M [00:32<00:34, 7.85MB/s]other data:  43%|████▎     | 202M/471M [00:32<00:29, 9.11MB/s]other data:  43%|████▎     | 203M/471M [00:32<00:29, 9.24MB/s]other data:  43%|████▎
+2018-09-10 20:03:23,789 INFO - | 204M/471M [00:32<00:40, 6.61MB/s]other data:  44%|████▎     | 205M/471M [00:32<00:34, 7.76MB/s]other data:  44%|████▍     | 207M/471M [00:32<00:29, 9.01MB/s]other data:  44%|████▍     | 208M/471M [00:33<00:28, 9.14MB/s]other data:  44%|████▍     | 208M/471M [00:33<00:39, 6.69MB/s]other data:  45%|████▍     | 210M/471M [00:33<00:33, 7.84MB/s]other data:  45%|████▍     | 211M/471M [00:33<00:28, 9.08MB/s]other data:  45%|████▌     | 213M/471M [00:33<00:28, 9.19MB/s]other data:  45%|████▌     | 213M/471M [00:33<00:38, 6.70MB/s]other data:  46%|████▌     | 215M/471M [00:33<00:32, 7.85MB/s]other data:  46%|████▌     | 216M/471M [00:33<00:28, 9.09MB/s]other data:  46%|████▌     | 217M/471M [00:34<00:27, 9.20MB/s]other data:  46%|████▌     | 218M/471M [00:34<00:37, 6.71MB/s]other data:  47%|████▋     | 219M/471M [00:34<00:31, 7.96MB/s]other data:  47%|████▋     | 221M/471M [00:34<00:27, 9.05MB/s]other data:  47%|████▋     | 222M/471M [00:34<00:27, 9.17MB/s]other data:  47%|████▋     | 223M/471M [00:34<00:37, 6.70MB/s]other data:  48%|████▊     | 224M/471M [00:34<00:31, 7.96MB/s]other data:  48%|████▊     | 226M/471M [00:34<00:28, 8.51MB/s]other data:  48%|████▊     | 227M/471M [00:35<00:25, 9.53MB/s]other data:  48%|████▊     | 228M/471M [00:35<00:25, 9.51MB/s]other data:  49%|████▊     | 229M/471M [00:35<00:35, 6.83MB/s]other data:  49%|████▉     | 230M/471M [00:35<00:29, 8.08MB/s]other data:  49%|████▉     | 232M/471M [00:35<00:26, 9.15MB/s]other data:  49%|████▉     | 233M/471M [00:35<00:25, 9.24MB/s]other data:  50%|████▉     | 234M/471M [00:35<00:35, 6.74MB/s]other data:  50%|████▉     | 235M/471M [00:35<00:29, 7.99MB/s]other data:  50%|█████     | 237M/471M [00:35<00:25, 9.08MB/s]other data:  50%|█████     | 238M/471M [00:36<00:25, 9.18MB/s]other data:  51%|█████     | 238M/471M [00:36<00:34, 6.72MB/s]other data:  51%|█████     | 240M/471M [00:36<00:28, 7.98MB/s]other data:  51%|█████▏    | 241M/471M [00:36<00:25, 9.04MB/s]other data:  51%|█████▏    | 243M/471M [00:36<00:24, 9.20MB/s]other data:  52%|█████▏    | 243M/471M [00:36<00:33, 6.72MB/s]other data:  52%|█████▏    | 245M/471M [00:36<00:28, 7.98MB/s]other data:  52%|█████▏    | 246M/471M [00:36<00:24, 9.04MB/s]other data:  53%|█████▎    | 247M/471M [00:36<00:24, 9.19MB/s]other data:  53%|█████▎    | 248M/471M [00:37<00:33, 6.72MB/s]other data:  53%|█████▎    | 249M/471M [00:37<00:27, 7.98MB/s]other data:  53%|█████▎    | 251M/471M [00:37<00:24, 9.04MB/s]other data:  54%|█████▎    | 252M/471M [00:37<00:23, 9.19MB/s]other data:  54%|█████▎    | 253M/471M [00:37<00:32, 6.72MB/s]other data:  54%|█████▍    | 254M/471M [00:37<00:27, 7.92MB/s]other data:  54%|█████▍    | 256M/471M [00:37<00:23, 9.07MB/s]other data:  55%|█████▍    | 257M/471M [00:37<00:23, 9.21MB/s]other data:  55%|█████▍    | 257M/471M [00:38<00:31, 6.73MB/s]other data:  55%|█████▍    | 259M/471M [00:38<00:26, 7.93MB/s]other data:  55%|█████▌    | 260M/471M [00:38<00:23, 9.08MB/s]other data:  56%|█████▌    | 261M/471M [00:38<00:22, 9.18MB/s]other data:  56%|█████▌    | 262M/471M [00:38<00:31, 6.72MB/s]other data:  56%|█████▌    | 264M/471M [00:38<00:26, 7.87MB/s]other data:  56%|█████▋    | 265M/471M [00:38<00:22, 9.11MB/s]other data:  57%|█████▋    | 266M/471M [00:38<00:22, 9.20MB/s]other data:  57%|█████▋    | 267M/471M [00:38<00:30, 6.73MB/s]other data:  57%|█████▋    | 268M/471M [00:39<00:25, 7.87MB/s]other data:  57%|█████▋    | 270M/471M [00:39<00:22, 9.12MB/s]other data:  58%|█████▊    | 271M/471M [00:39<00:21, 9.21MB/s]other data:  58%|█████▊    | 271M/471M [00:39<00:29, 6.73MB/s]other data:  58%|█████▊    | 273M/471M [00:39<00:25, 7.87MB/s]other data:  58%|█████▊    | 275M/471M [00:39<00:21, 9.12MB/s]other data:  59%|█████▊    | 276M/471M [00:39<00:21, 9.21MB/s]other data:  59%|█████▊    | 276M/471M [00:39<00:28, 6.73MB/s]other data:  59%|█████▉    | 278M/471M [00:40<00:24, 7.97MB/s]other data:  59%|█████▉    | 279M/471M [00:40<00:21, 9.07MB/s]other data:  60%|█████▉    | 280M/471M [00:40<00:20, 9.18MB/s]other data:  60%|█████▉    | 281M/471M [00:40<00:28, 6.72MB/s]other data:  60%|█████▉    | 282M/471M [00:40<00:23, 7.96MB/s]other data:  60%|██████    | 284M/471M [00:40<00:21, 8.51MB/s]other data:  61%|██████    | 286M/471M [00:40<00:19, 9.55MB/s]other data:  61%|██████    | 287M/471M [00:40<00:19, 9.52MB/s]other data:  61%|██████    | 287M/471M [00:40<00:26, 6.85MB/s]other data:  61%|██████▏   | 289M/471M [00:41<00:22, 8.09MB/s]other data:  62%|██████▏   | 290M/471M [00:41<00:19, 9.17MB/s]other data:  62%|██████▏   | 291M/471M [00:41<00:19, 9.26MB/s]other data:  62%|██████▏   | 292M/471M [00:41<00:26, 6.75MB/s]other data:  62%|██████▏   | 294M/471M [00:41<00:22, 7.99MB/s]other data:  63%|██████▎   | 295M/471M [00:41<00:19, 9.09MB/s]other data:  63%|██████▎   | 296M/471M [00:41<00:19, 9.20MB/s]other data:  63%|██████▎   | 297M/471M [00:41<00:25, 6.73MB/s]other data:  63%|██████▎   | 298M/471M [00:42<00:21, 7.97MB/s]other data:  64%|██████▎   | 300M/471M [00:42<00:20, 8.51MB/s]other data:  64%|██████▍   | 301M/471M [00:42<00:17, 9.55MB/s]other data:  64%|██████▍   | 303M/471M [00:42<00:17, 9.52MB/s]other data:  64%|██████▍   | 303M/471M [00:42<00:24, 6.85MB/s]other data:  65%|██████▍   | 305M/471M [00:42<00:20, 8.09MB/s]other data:  65%|██████▍   | 306M/471M [00:42<00:17, 9.18MB/s]other data:  65%|██████▌   | 307M/471M [00:42<00:17, 9.26MB/s]other data:  65%|██████▌   | 308M/471M [00:43<00:24, 6.76MB/s]other data:  66%|██████▌   | 309M/471M [00:43<00:20, 8.00MB/s]other data:  66%|██████▌   | 311M/471M [00:43<00:17, 9.09MB/s]other data:  66%|██████▌   | 312M/471M [00:43<00:17, 9.19MB/s]other data:  66%|██████▋   | 312M/471M [00:43<00:23, 6.75MB/s]other data:  67%|██████▋   | 314M/471M [00:43<00:19, 7.98MB/s]other data:  67%|██████▋   | 316M/471M [00:43<00:17, 9.08MB/s]other data:  67%|██████▋   | 317M/471M [00:43<00:16, 9.17MB/s]other data:  67%|██████▋   | 317M/471M [00:43<00:22, 6.74MB/s]other data:  68%|██████▊   | 319M/471M [00:44<00:19, 7.98MB/s]other data:  68%|██████▊   | 320M/471M [00:44<00:17, 8.53MB/s]other data:  68%|██████▊   | 322M/471M [00:44<00:15, 9.56MB/s]other data:  69%|██████▊   | 323M/471M [00:44<00:15, 9.52MB/s]other data:  69%|██████▊   | 324M/471M [00:44<00:21, 6.86MB/s]other data:  69%|██████▉   | 325M/471M [00:44<00:18, 8.10MB/s]other data:  69%|██████▉   | 327M/471M [00:44<00:15, 9.19MB/s]other data:  70%|██████▉   | 328M/471M [00:44<00:15, 9.25MB/s]other data:  70%|██████▉   | 328M/471M [00:45<00:21, 6.77MB/s]other data:  70%|███████   | 330M/471M [00:45<00:17, 8.01MB/s]other data:  70%|███████   | 331M/471M [00:45<00:15, 9.10MB/s]other data:  71%|███████   | 332M/471M [00:45<00:15, 9.19MB/s]other data:  71%|███████   | 333M/471M [00:45<00:20, 6.75MB/s]other data:  71%|███████   | 335M/471M [00:45<00:17, 7.99MB/s]other data:  71%|███████▏  | 336M/471M [00:45<00:15, 8.53MB/s]other data:  72%|███████▏  | 338M/471M [00:45<00:13, 9.56MB/s]other data:  72%|███████▏  | 339M/471M [00:45<00:13, 9.53MB/s]other data:  72%|███████▏  | 339M/471M [00:46<00:19, 6.87MB/s]other data:  72%|███████▏  | 341M/471M [00:46<00:16, 8.10MB/s]other data:  73%|███████▎  | 342M/471M [00:46<00:14, 9.17MB/s]other data:  73%|███████▎  | 344M/471M [00:46<00:13, 9.27MB/s]other data:  73%|███████▎  | 344M/471M [00:46<00:18, 6.77MB/s]other data:  73%|███████▎  | 346M/471M [00:46<00:15, 8.01MB/s]other data:  74%|███████▎  | 347M/471M [00:46<00:13, 9.09MB/s]other data:  74%|███████▍  | 348M/471M [00:46<00:13, 9.20MB/s]other data:  74%|███████▍  | 349M/471M [00:47<00:18, 6.74MB/s]other data:  74%|███████▍  | 350M/471M [00:47<00:15, 7.98MB/s]other data:  75%|███████▍  | 352M/471M [00:47<00:13, 9.05MB/s]other data:  75%|███████▍  | 353M/471M [00:47<00:12, 9.21MB/s]other data:  75%|███████▌  | 353M/471M [00:47<00:17, 6.74MB/s]other data:  75%|███████▌  | 355M/471M [00:47<00:14, 7.96MB/s]other data:  76%|███████▌  | 357M/471M [00:47<00:12, 9.06MB/s]other data:  76%|███████▌  | 358M/471M [00:47<00:12, 9.22MB/s]other data:  76%|███████▌  | 358M/471M [00:47<00:16, 6.75MB/s]other data:  76%|███████▋  | 360M/471M [00:48<00:13, 7.97MB/s]other data:  77%|███████▋  | 361M/471M [00:48<00:12, 9.07MB/s]other data:  77%|███████▋  | 362M/471M [00:48<00:11, 9.18MB/s]other data:  77%|███████▋  | 363M/471M [00:48<00:15, 6.85MB/s]other data:  77%|███████▋  | 365M/471M [00:48<00:13, 8.06MB/s]other data:  78%|███████▊  | 366M/471M [00:48<00:11, 9.15MB/s]other data:  78%|███████▊  | 367M/471M [00:48<00:11, 9.24MB/s]other data:  78%|███████▊  | 368M/471M [00:48<00:15, 6.87MB/s]other data:  78%|███████▊  | 369M/471M [00:49<00:12, 8.08MB/s]other data:  79%|███████▊  | 371M/471M [00:49<00:10, 9.17MB/s]other data:  79%|███████▉  | 372M/471M [00:49<00:10, 9.26MB/s]other data:  79%|███████▉  | 372M/471M [00:49<00:14, 6.88MB/s]other data:  79%|███████▉  | 374M/471M [00:49<00:11, 8.09MB/s]other data:  80%|███████▉  | 376M/471M [00:49<00:10, 9.18MB/s]other data:  80%|███████▉  | 377M/471M [00:49<00:10, 9.26MB/s]other data:  80%|████████  | 377M/471M [00:49<00:13, 6.88MB/s]other data:  80%|████████  | 379M/471M [00:49<00:11, 8.01MB/s]other data:  81%|████████  | 380M/471M [00:50<00:09, 9.21MB/s]other data:  81%|████████  | 381M/471M [00:50<00:09, 9.29MB/s]other data:  81%|████████  | 382M/471M [00:50<00:13, 6.78MB/s]other data:  81%|████████▏ | 383M/471M [00:50<00:11, 7.93MB/s]other data:  82%|████████▏ | 385M/471M [00:50<00:09, 9.14MB/s]other data:  82%|████████▏ | 386M/471M [00:50<00:09, 9.23MB/s]other data:  82%|████████▏ | 387M/471M [00:50<00:12, 6.77MB/s]other data:  82%|████████▏ | 388M/471M [00:50<00:10, 8.01MB/s]other data:  83%|████████▎ | 390M/471M [00:51<00:08, 9.09MB/s]other data:  83%|████████▎ | 391M/471M [00:51<00:08, 9.20MB/s]other data:  83%|████████▎ | 391M/471M [00:51<00:11, 6.75MB/s]other data:  83%|████████▎ | 393M/471M [00:51<00:09, 7.99MB/s]other data:  84%|████████▍ | 394M/471M [00:51<00:08, 9.07MB/s]other data:  84%|████████▍ | 396M/471M [00:51<00:08, 9.18MB/s]other data:  84%|████████▍ | 396M/471M [00:51<00:11, 6.75MB/s]other data:  84%|████████▍ | 398M/471M [00:51<00:09, 7.99MB/s]other data:  85%|████████▍ | 399M/471M [00:51<00:07, 9.05MB/s]other data:  85%|████████▍ | 400M/471M [00:52<00:07, 9.17MB/s]other data:  85%|████████▌ | 401M/471M [00:52<00:10, 6.85MB/s]other data:  85%|████████▌ | 402M/471M [00:52<00:08, 8.09MB/s]other data:  86%|████████▌ | 404M/471M [00:52<00:07, 9.14MB/s]other data:  86%|████████▌ | 405M/471M [00:52<00:07, 9.24MB/s]other data:  86%|████████▌ | 406M/471M [00:52<00:09, 6.87MB/s]other data:  86%|████████▋ | 407M/471M [00:52<00:07, 8.09MB/s]other data:  87%|████████▋ | 409M/471M [00:52<00:06, 9.16MB/s]other data:  87%|████████▋ | 410M/471M [00:52<00:06, 9.25MB/s]other data:  87%|████████▋ | 410M/471M [00:53<00:08, 6.88MB/s]other data:  87%|████████▋ | 412M/471M [00:53<00:07, 8.10MB/s]other data:  88%|████████▊ | 413M/471M [00:53<00:06, 9.17MB/s]other data:  88%|████████▊ | 415M/471M [00:53<00:06, 9.25MB/s]other data:  88%|████████▊ | 415M/471M [00:53<00:08, 6.88MB/s]other data:  88%|████████▊ | 417M/471M [00:53<00:06, 8.11MB/s]other data:  89%|████████▉ | 418M/471M [00:53<00:05, 9.18MB/s]other data:  89%|████████▉ | 419M/471M [00:53<00:05, 9.25MB/s]other data:  89%|████████▉ | 420M/471M [00:54<00:07, 6.87MB/s]other data:  89%|████████▉ | 421M/471M [00:54<00:06, 8.10MB/s]other data:  90%|████████▉ | 423M/471M [00:54<00:05, 9.17MB/s]other data:  90%|█████████ | 424M/471M [00:54<00:05, 9.24MB/s]other data:  90%|█████████ | 425M/471M [00:54<00:06, 6.87MB/s]other data:  90%|█████████ | 426M/471M [00:54<00:05, 8.01MB/s]other data:  91%|█████████ | 428M/471M [00:54<00:04, 9.21MB/s]other data:  91%|█████████ | 429M/471M [00:54<00:04, 9.28MB/s]other data:  91%|█████████ | 429M/471M [00:54<00:06, 6.79MB/s]other data:  91%|█████████▏| 431M/471M [00:55<00:05, 8.04MB/s]other data:  92%|█████████▏| 432M/471M [00:55<00:04, 9.10MB/s]other data:  92%|█████████▏| 433M/471M [00:55<00:04, 9.20MB/s]other data:  92%|█████████▏| 434M/471M [00:55<00:05, 6.77MB/s]other data:  92%|█████████▏| 436M/471M [00:55<00:04, 8.02MB/s]other data:  93%|█████████▎| 437M/471M [00:55<00:03, 9.08MB/s]other data:  93%|█████████▎| 438M/471M [00:55<00:03, 9.18MB/s]other data:  93%|█████████▎| 439M/471M [00:55<00:04, 6.76MB/s]other data:  93%|█████████▎| 440M/471M [00:56<00:03, 8.01MB/s]other data:  94%|█████████▍| 442M/471M [00:56<00:03, 9.07MB/s]other data:  94%|█████████▍| 443M/471M [00:56<00:03, 9.18MB/s]other data:  94%|█████████▍| 443M/471M [00:56<00:04, 6.76MB/s]other data:  94%|█████████▍| 445M/471M [00:56<00:03, 8.02MB/s]other data:  95%|█████████▍| 447M/471M [00:56<00:02, 9.05MB/s]other data:  95%|█████████▌| 448M/471M [00:56<00:02, 9.17MB/s]other data:  95%|█████████▌| 448M/471M [00:56<00:03, 6.87MB/s]other data:  95%|█████████▌| 450M/471M [00:56<00:02, 8.12MB/s]other data:  96%|█████████▌| 451M/471M [00:57<00:02, 9.15MB/s]other data:  96%|█████████▌| 452M/471M [00:57<00:02, 9.24MB/s]other data:  96%|█████████▌| 453M/471M [00:57<00:02, 6.89MB/s]other data:  96%|█████████▋| 454M/471M [00:57<00:02, 8.14MB/s]other d
+2018-09-10 20:03:25,273 INFO - ata:  97%|█████████▋| 456M/471M [00:57<00:01, 9.17MB/s]other data:  97%|█████████▋| 457M/471M [00:57<00:01, 9.24MB/s]other data:  97%|█████████▋| 458M/471M [00:57<00:01, 6.91MB/s]other data:  97%|█████████▋| 459M/471M [00:57<00:01, 8.13MB/s]other data:  98%|█████████▊| 461M/471M [00:57<00:01, 9.18MB/s]other data:  98%|█████████▊| 462M/471M [00:58<00:00, 9.26MB/s]other data:  98%|█████████▊| 462M/471M [00:58<00:01, 6.92MB/s]other data:  98%|█████████▊| 464M/471M [00:58<00:00, 8.14MB/s]other data:  99%|█████████▉| 465M/471M [00:58<00:00, 9.19MB/s]other data:  99%|█████████▉| 467M/471M [00:58<00:00, 9.27MB/s]other data:  99%|█████████▉| 467M/471M [00:58<00:00, 6.90MB/s]other data: 100%|█████████▉| 469M/471M [00:58<00:00, 8.13MB/s]other data: 100%|█████████▉| 470M/471M [00:58<00:00, 9.18MB/s]other data: 471MB [00:59, 7.98MB/s]
+2018-09-10 20:03:25,273 INFO - Extracting data ...
+2018-09-10 20:03:29,232 INFO - Tests Passed
+2018-09-10 20:03:29,233 INFO - Downloading pre-trained vgg model...
+2018-09-10 20:03:45,714 INFO - 0.00B [00:00, ?B/s]  0%|          | 8.19k/997M [00:00<9:31:40, 29.1kB/s]  0%|          | 139k/997M [00:00<6:44:24, 41.1kB/s]   0%|          | 492k/997M [00:00<4:44:39, 58.3kB/s]  0%|          | 1.08M/997M [00:00<3:20:05, 83.0kB/s]  0%|          | 2.09M/997M [00:00<2:20:28, 118kB/s]   0%|          | 3.92M/997M [00:00<1:38:27, 168kB/s]  1%|          | 6.60M/997M [00:00<1:08:55, 239kB/s]  1%|          | 11.5M/997M [00:01<48:06, 341kB/s]    2%|▏         | 17.6M/997M [00:01<33:32, 487kB/s]  2%|▏         | 23.3M/997M [00:01<23:25, 693kB/s]  3%|▎         | 27.8M/997M [00:01<16:26, 983kB/s]  3%|▎         | 32.3M/997M [00:01<11:33, 1.39MB/s]  4%|▎         | 36.7M/997M [00:01<08:10, 1.96MB/s]  4%|▍         | 41.1M/997M [00:01<05:48, 2.74MB/s]  5%|▍         | 45.9M/997M [00:01<04:08, 3.83MB/s]  5%|▌         | 50.4M/997M [00:01<02:59, 5.27MB/s]  6%|▌         | 55.3M/997M [00:01<02:11, 7.19MB/s]  6%|▌         | 59.9M/997M [00:02<01:37, 9.62MB/s]  6%|▋         | 64.6M/997M [00:02<01:13, 12.6MB/s]  7%|▋         | 69.2M/997M [00:02<00:57, 16.1MB/s]  7%|▋         | 73.7M/997M [00:02<00:46, 20.0MB/s]  8%|▊         | 78.6M/997M [00:02<00:38, 24.1MB/s]  8%|▊         | 83.1M/997M [00:02<00:33, 27.6MB/s]  9%|▉         | 87.8M/997M [00:02<00:28, 31.6MB/s]  9%|▉         | 92.9M/997M [00:02<00:25, 35.4MB/s] 10%|▉         | 98.4M/997M [00:02<00:22, 39.5MB/s] 10%|█         | 104M/997M [00:02<00:20, 43.8MB/s]  11%|█         | 110M/997M [00:03<00:18, 47.3MB/s] 12%|█▏        | 117M/997M [00:03<00:17, 51.6MB/s] 12%|█▏        | 123M/997M [00:03<00:15, 54.7MB/s] 13%|█▎        | 130M/997M [00:03<00:14, 58.1MB/s] 14%|█▎        | 137M/997M [00:03<00:14, 59.3MB/s] 14%|█▍        | 144M/997M [00:03<00:13, 62.8MB/s] 15%|█▌        | 151M/997M [00:03<00:13, 63.8MB/s] 16%|█▌        | 158M/997M [00:03<00:13, 64.1MB/s] 17%|█▋        | 165M/997M [00:03<00:12, 66.5MB/s] 17%|█▋        | 172M/997M [00:04<00:12, 65.9MB/s] 18%|█▊        | 179M/997M [00:04<00:12, 67.2MB/s] 19%|█▊        | 186M/997M [00:04<00:12, 64.6MB/s] 19%|█▉        | 192M/997M [00:04<00:12, 64.9MB/s] 20%|█▉        | 199M/997M [00:04<00:12, 65.1MB/s] 21%|██        | 205M/997M [00:04<00:12, 64.9MB/s] 21%|██        | 212M/997M [00:04<00:12, 64.3MB/s] 22%|██▏       | 219M/997M [00:04<00:11, 66.5MB/s] 23%|██▎       | 226M/997M [00:04<00:11, 66.8MB/s] 23%|██▎       | 233M/997M [00:04<00:11, 67.7MB/s] 24%|██▍       | 240M/997M [00:05<00:11, 68.3MB/s] 25%|██▍       | 247M/997M [00:05<00:10, 69.2MB/s] 25%|██▌       | 254M/997M [00:05<00:10, 69.3MB/s] 26%|██▌       | 261M/997M [00:05<00:10, 69.9MB/s] 27%|██▋       | 268M/997M [00:05<00:10, 69.6MB/s] 28%|██▊       | 275M/997M [00:05<00:10, 68.8MB/s] 28%|██▊       | 282M/997M [00:05<00:10, 68.9MB/s] 29%|██▉       | 289M/997M [00:05<00:10, 68.1MB/s] 30%|██▉       | 296M/997M [00:05<00:10, 68.4MB/s] 30%|███       | 303M/997M [00:05<00:10, 68.8MB/s] 31%|███       | 310M/997M [00:06<00:10, 68.2MB/s] 32%|███▏      | 317M/997M [00:06<00:10, 67.9MB/s] 32%|███▏      | 323M/997M [00:06<00:10, 66.0MB/s] 33%|███▎      | 330M/997M [00:06<00:09, 67.5MB/s] 34%|███▍      | 337M/997M [00:06<00:09, 66.9MB/s] 35%|███▍      | 344M/997M [00:06<00:09, 68.0MB/s] 35%|███▌      | 351M/997M [00:06<00:09, 68.4MB/s] 36%|███▌      | 358M/997M [00:06<00:09, 69.0MB/s] 37%|███▋      | 365M/997M [00:06<00:09, 68.1MB/s] 37%|███▋      | 372M/997M [00:06<00:09, 67.5MB/s] 38%|███▊      | 378M/997M [00:07<00:09, 65.5MB/s] 39%|███▊      | 385M/997M [00:07<00:09, 66.3MB/s] 39%|███▉      | 391M/997M [00:07<00:09, 65.9MB/s] 40%|███▉      | 398M/997M [00:07<00:09, 66.4MB/s] 41%|████      | 405M/997M [00:07<00:09, 65.7MB/s] 41%|████▏     | 412M/997M [00:07<00:08, 66.7MB/s] 42%|████▏     | 419M/997M [00:07<00:08, 67.8MB/s] 43%|████▎     | 425M/997M [00:07<00:08, 66.8MB/s] 43%|████▎     | 432M/997M [00:07<00:08, 65.1MB/s] 44%|████▍     | 439M/997M [00:07<00:08, 66.8MB/s] 45%|████▍     | 445M/997M [00:08<00:08, 66.2MB/s] 45%|████▌     | 452M/997M [00:08<00:08, 67.2MB/s] 46%|████▌     | 459M/997M [00:08<00:07, 67.3MB/s] 47%|████▋     | 466M/997M [00:08<00:07, 68.5MB/s] 47%|████▋     | 473M/997M [00:08<00:07, 68.7MB/s] 48%|████▊     | 480M/997M [00:08<00:07, 69.5MB/s] 49%|████▉     | 487M/997M [00:08<00:07, 69.1MB/s] 50%|████▉     | 494M/997M [00:08<00:07, 67.7MB/s] 50%|█████     | 501M/997M [00:08<00:07, 67.8MB/s] 51%|█████     | 508M/997M [00:08<00:07, 68.3MB/s] 52%|█████▏    | 515M/997M [00:09<00:07, 68.1MB/s] 52%|█████▏    | 522M/997M [00:09<00:07, 66.9MB/s] 53%|█████▎    | 528M/997M [00:09<00:07, 65.0MB/s] 54%|█████▎    | 535M/997M [00:09<00:07, 65.8MB/s] 54%|█████▍    | 543M/997M [00:09<00:06, 66.6MB/s] 55%|█████▌    | 550M/997M [00:09<00:06, 68.1MB/s] 56%|█████▌    | 556M/997M [00:09<00:06, 67.7MB/s] 56%|█████▋    | 563M/997M [00:09<00:06, 66.0MB/s] 57%|█████▋    | 569M/997M [00:09<00:06, 65.1MB/s] 58%|█████▊    | 577M/997M [00:10<00:06, 66.8MB/s] 58%|█████▊    | 582M/997M [00:10<00:06, 63.7MB/s] 59%|█████▉    | 589M/997M [00:10<00:06, 65.0MB/s] 60%|█████▉    | 596M/997M [00:10<00:06, 66.0MB/s] 61%|██████    | 603M/997M [00:10<00:05, 67.4MB/s] 61%|██████    | 610M/997M [00:10<00:05, 67.6MB/s] 62%|██████▏   | 617M/997M [00:10<00:05, 66.0MB/s] 63%|██████▎   | 624M/997M [00:10<00:05, 68.9MB/s] 63%|██████▎   | 631M/997M [00:10<00:05, 67.3MB/s] 64%|██████▍   | 637M/997M [00:10<00:05, 66.0MB/s] 65%|██████▍   | 644M/997M [00:11<00:05, 64.8MB/s] 65%|██████▌   | 651M/997M [00:11<00:05, 65.8MB/s] 66%|██████▌   | 657M/997M [00:11<00:05, 66.3MB/s] 67%|██████▋   | 664M/997M [00:11<00:05, 65.0MB/s] 67%|██████▋   | 671M/997M [00:11<00:04, 65.6MB/s] 68%|██████▊   | 677M/997M [00:11<00:04, 65.2MB/s] 68%|██████▊   | 682M/997M [00:11<00:05, 61.3MB/s] 69%|██████▉   | 688M/997M [00:11<00:05, 60.4MB/s] 70%|██████▉   | 696M/997M [00:11<00:04, 63.1MB/s] 70%|███████   | 702M/997M [00:11<00:04, 64.3MB/s] 71%|███████   | 710M/997M [00:12<00:04, 66.8MB/s] 72%|███████▏  | 715M/997M [00:12<00:04, 62.5MB/s] 72%|███████▏  | 722M/997M [00:12<00:04, 63.8MB/s] 73%|███████▎  | 730M/997M [00:12<00:04, 65.3MB/s] 74%|███████▍  | 737M/997M [00:12<00:03, 65.8MB/s] 75%|███████▍  | 743M/997M [00:12<00:03, 63.8MB/s] 75%|███████▌  | 749M/997M [00:12<00:03, 63.1MB/s] 76%|███████▌  | 756M/997M [00:12<00:03, 63.9MB/s] 76%|███████▋  | 762M/997M [00:12<00:03, 63.4MB/s] 77%|███████▋  | 769M/997M [00:12<00:03, 64.1MB/s] 78%|███████▊  | 775M/997M [00:13<00:03, 63.5MB/s] 78%|███████▊  | 782M/997M [00:13<00:03, 63.9MB/s] 79%|███████▉  | 789M/997M [00:13<00:03, 66.1MB/s] 80%|███████▉  | 795M/997M [00:13<00:03, 62.4MB/s] 80%|████████  | 802M/997M [00:13<00:03, 62.9MB/s] 81%|████████  | 808M/997M [00:13<00:03, 62.9MB/s] 82%|████████▏ | 814M/997M [00:13<00:02, 62.7MB/s] 82%|████████▏ | 821M/997M [00:13<00:02, 65.2MB/s] 83%|████████▎ | 828M/997M [00:13<00:02, 65.6MB/s] 84%|████████▎ | 835M/997M [00:14<00:02, 64.6MB/s] 84%|████████▍ | 841M/997M [00:14<00:02, 64.7MB/s] 85%|████████▌ | 848M/997M [00:14<00:02, 64.4MB/s] 86%|████████▌ | 855M/997M [00:14<00:02, 64.7MB/s] 86%|████████▋ | 861M/997M [00:14<00:02, 64.4MB/s] 87%|████████▋ | 869M/997M [00:14<00:01, 65.6MB/s] 88%|████████▊ | 875M/997M [00:14<00:01, 65.9MB/s] 88%|████████▊ | 882M/997M [00:14<00:01, 64.7MB/s] 89%|████████▉ | 888M/997M [00:14<00:01, 65.0MB/s] 90%|████████▉ | 894M/997M [00:14<00:01, 64.1MB/s] 90%|█████████ | 901M/997M [00:15<00:01, 63.6MB/s] 91%|█████████ | 907M/997M [00:15<00:01, 62.8MB/s] 92%|█████████▏| 913M/997M [00:15<00:01, 62.0MB/s] 92%|█████████▏| 921M/997M [00:15<00:01, 64.6MB/s] 93%|█████████▎| 928M/997M [00:15<00:01, 66.5MB/s] 94%|█████████▍| 935M/997M [00:15<00:00, 66.8MB/s] 94%|█████████▍| 941M/997M [00:15<00:00, 65.7MB/s] 95%|█████████▌| 948M/997M [00:15<00:00, 65.4MB/s] 96%|█████████▌| 955M/997M [00:15<00:00, 68.0MB/s] 96%|█████████▋| 962M/997M [00:15<00:00, 66.9MB/s] 97%|█████████▋| 969M/997M [00:16<00:00, 67.2MB/s] 98%|█████████▊| 976M/997M [00:16<00:00, 68.5MB/s] 99%|█████████▊| 983M/997M [00:16<00:00, 66.9MB/s] 99%|█████████▉| 989M/997M [00:16<00:00, 64.8MB/s]100%|█████████▉| 996M/997M [00:16<00:00, 66.4MB/s]997MB [00:16, 60.5MB/s]
+2018-09-10 20:03:45,714 INFO - Extracting model...
+2018-09-10 20:03:55,854 INFO - 2018-09-11 03:03:55.853386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-09-10 20:03:55,855 INFO - 2018-09-11 03:03:55.853470: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-10 20:03:55,855 INFO - 2018-09-11 03:03:55.853489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-09-10 20:03:55,855 INFO - 2018-09-11 03:03:55.853502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-09-10 20:03:55,855 INFO - 2018-09-11 03:03:55.853646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14441 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:00:1e.0, compute capability: 7.0)
+2018-09-10 20:03:57,352 INFO - 2018-09-11 03:03:57.351620: W tensorflow/core/graph/graph_constructor.cc:1244] Importing a graph with a lower producer version 21 into an existing graph with producer version 26. Shape inference will have run different parts of the graph with different producer versions.
+2018-09-10 20:04:01,790 INFO - Training...
+2018-09-10 20:04:01,790 INFO - 
+2018-09-10 20:04:01,791 INFO - EPOCH 1 ...
+2018-09-10 20:05:10,620 INFO - Loss: = 1.656
+2018-09-10 20:05:11,469 INFO - Loss: = 4.339
+2018-09-10 20:05:12,309 INFO - Loss: = 0.922
+2018-09-10 20:05:13,161 INFO - Loss: = 0.714
+2018-09-10 20:05:14,000 INFO - Loss: = 0.758
+2018-09-10 20:05:14,842 INFO - Loss: = 0.756
+2018-09-10 20:05:15,685 INFO - Loss: = 0.673
+2018-09-10 20:05:16,531 INFO - Loss: = 0.607
+2018-09-10 20:05:17,381 INFO - Loss: = 0.548
+2018-09-10 20:05:18,231 INFO - Loss: = 0.581
+2018-09-10 20:05:19,078 INFO - Loss: = 0.535
+2018-09-10 20:05:19,916 INFO - Loss: = 0.522
+2018-09-10 20:05:20,762 INFO - Loss: = 0.474
+2018-09-10 20:05:21,601 INFO - Loss: = 0.461
+2018-09-10 20:05:22,441 INFO - Loss: = 0.433
+2018-09-10 20:05:23,285 INFO - Loss: = 0.437
+2018-09-10 20:05:24,119 INFO - Loss: = 0.433
+2018-09-10 20:05:24,952 INFO - Loss: = 0.403
+2018-09-10 20:05:25,442 INFO - Loss: = 0.314
+2018-09-10 20:05:25,442 INFO - EPOCH 2 ...
+2018-09-10 20:05:26,284 INFO - Loss: = 0.389
+2018-09-10 20:05:27,123 INFO - Loss: = 0.390
+2018-09-10 20:05:27,969 INFO - Loss: = 0.363
+2018-09-10 20:05:28,817 INFO - Loss: = 0.359
+2018-09-10 20:05:29,659 INFO - Loss: = 0.424
+2018-09-10 20:05:30,500 INFO - Loss: = 0.320
+2018-09-10 20:05:31,347 INFO - Loss: = 0.287
+2018-09-10 20:05:32,185 INFO - Loss: = 0.270
+2018-09-10 20:05:33,033 INFO - Loss: = 0.276
+2018-09-10 20:05:33,881 INFO - Loss: = 0.304
+2018-09-10 20:05:34,730 INFO - Loss: = 0.230
+2018-09-10 20:05:35,583 INFO - Loss: = 0.249
+2018-09-10 20:05:36,424 INFO - Loss: = 0.258
+2018-09-10 20:05:37,273 INFO - Loss: = 0.245
+2018-09-10 20:05:38,112 INFO - Loss: = 0.246
+2018-09-10 20:05:38,951 INFO - Loss: = 0.162
+2018-09-10 20:05:39,800 INFO - Loss: = 0.195
+2018-09-10 20:05:40,641 INFO - Loss: = 0.227
+2018-09-10 20:05:40,765 INFO - Loss: = 0.132
+2018-09-10 20:05:40,766 INFO - EPOCH 3 ...
+2018-09-10 20:05:41,616 INFO - Loss: = 0.208
+2018-09-10 20:05:42,465 INFO - Loss: = 0.203
+2018-09-10 20:05:43,316 INFO - Loss: = 0.194
+2018-09-10 20:05:44,154 INFO - Loss: = 0.210
+2018-09-10 20:05:44,985 INFO - Loss: = 0.185
+2018-09-10 20:05:45,831 INFO - Loss: = 0.202
+2018-09-10 20:05:46,682 INFO - Loss: = 0.185
+2018-09-10 20:05:47,539 INFO - Loss: = 0.172
+2018-09-10 20:05:48,386 INFO - Loss: = 0.192
+2018-09-10 20:05:49,237 INFO - Loss: = 0.160
+2018-09-10 20:05:50,090 INFO - Loss: = 0.219
+2018-09-10 20:05:50,934 INFO - Loss: = 0.212
+2018-09-10 20:05:51,775 INFO - Loss: = 0.287
+2018-09-10 20:05:52,614 INFO - Loss: = 0.226
+2018-09-10 20:05:53,453 INFO - Loss: = 0.190
+2018-09-10 20:05:54,291 INFO - Loss: = 0.281
+2018-09-10 20:05:55,120 INFO - Loss: = 0.198
+2018-09-10 20:05:55,960 INFO - Loss: = 0.217
+2018-09-10 20:05:56,076 INFO - Loss: = 0.181
+2018-09-10 20:05:56,076 INFO - EPOCH 4 ...
+2018-09-10 20:05:56,923 INFO - Loss: = 0.169
+2018-09-10 20:06:06,813 INFO - Loss: = 0.192
+2018-09-10 20:06:06,814 INFO - Loss: = 0.167
+2018-09-10 20:06:06,815 INFO - Loss: = 0.167
+2018-09-10 20:06:06,815 INFO - Loss: = 0.178
+2018-09-10 20:06:06,815 INFO - Loss: = 0.168
+2018-09-10 20:06:06,815 INFO - Loss: = 0.158
+2018-09-10 20:06:06,815 INFO - Loss: = 0.156
+2018-09-10 20:06:06,815 INFO - Loss: = 0.143
+2018-09-10 20:06:06,815 INFO - Loss: = 0.181
+2018-09-10 20:06:06,816 INFO - Loss: = 0.188
+2018-09-10 20:06:06,816 INFO - Loss: = 0.152
+2018-09-10 20:06:07,020 INFO - Loss: = 0.160
+2018-09-10 20:06:07,867 INFO - Loss: = 0.171
+2018-09-10 20:06:08,708 INFO - Loss: = 0.160
+2018-09-10 20:06:09,549 INFO - Loss: = 0.200
+2018-09-10 20:06:10,398 INFO - Loss: = 0.152
+2018-09-10 20:06:11,238 INFO - Loss: = 0.143
+2018-09-10 20:06:11,355 INFO - Loss: = 0.143
+2018-09-10 20:06:11,355 INFO - EPOCH 5 ...
+2018-09-10 20:06:12,203 INFO - Loss: = 0.161
+2018-09-10 20:06:13,049 INFO - Loss: = 0.128
+2018-09-10 20:06:13,887 INFO - Loss: = 0.185
+2018-09-10 20:06:14,726 INFO - Loss: = 0.166
+2018-09-10 20:06:15,582 INFO - Loss: = 0.175
+2018-09-10 20:06:16,435 INFO - Loss: = 0.141
+2018-09-10 20:06:17,290 INFO - Loss: = 0.173
+2018-09-10 20:06:18,140 INFO - Loss: = 0.154
+2018-09-10 20:06:18,989 INFO - Loss: = 0.165
+2018-09-10 20:06:19,840 INFO - Loss: = 0.177
+2018-09-10 20:06:20,689 INFO - Loss: = 0.158
+2018-09-10 20:06:21,538 INFO - Loss: = 0.156
+2018-09-10 20:06:22,378 INFO - Loss: = 0.141
+2018-09-10 20:06:23,218 INFO - Loss: = 0.179
+2018-09-10 20:06:24,063 INFO - Loss: = 0.123
+2018-09-10 20:06:24,898 INFO - Loss: = 0.179
+2018-09-10 20:06:25,746 INFO - Loss: = 0.180
+2018-09-10 20:06:26,596 INFO - Loss: = 0.147
+2018-09-10 20:06:26,712 INFO - Loss: = 0.119
+2018-09-10 20:06:26,712 INFO - EPOCH 6 ...
+2018-09-10 20:06:27,555 INFO - Loss: = 0.215
+2018-09-10 20:06:28,394 INFO - Loss: = 0.140
+2018-09-10 20:06:29,238 INFO - Loss: = 0.160
+2018-09-10 20:06:30,091 INFO - Loss: = 0.170
+2018-09-10 20:06:30,939 INFO - Loss: = 0.141
+2018-09-10 20:06:31,783 INFO - Loss: = 0.135
+2018-09-10 20:06:32,636 INFO - Loss: = 0.144
+2018-09-10 20:06:33,494 INFO - Loss: = 0.175
+2018-09-10 20:06:34,344 INFO - Loss: = 0.120
+2018-09-10 20:06:35,198 INFO - Loss: = 0.147
+2018-09-10 20:06:36,033 INFO - Loss: = 0.132
+2018-09-10 20:06:36,876 INFO - Loss: = 0.139
+2018-09-10 20:06:37,717 INFO - Loss: = 0.150
+2018-09-10 20:06:38,551 INFO - Loss: = 0.135
+2018-09-10 20:06:39,391 INFO - Loss: = 0.161
+2018-09-10 20:06:40,227 INFO - Loss: = 0.128
+2018-09-10 20:06:41,065 INFO - Loss: = 0.173
+2018-09-10 20:06:41,909 INFO - Loss: = 0.124
+2018-09-10 20:06:42,026 INFO - Loss: = 0.193
+2018-09-10 20:06:42,027 INFO - EPOCH 7 ...
+2018-09-10 20:06:42,871 INFO - Loss: = 0.138
+2018-09-10 20:06:43,721 INFO - Loss: = 0.148
+2018-09-10 20:06:44,564 INFO - Loss: = 0.148
+2018-09-10 20:06:45,400 INFO - Loss: = 0.142
+2018-09-10 20:06:46,245 INFO - Loss: = 0.137
+2018-09-10 20:06:47,078 INFO - Loss: = 0.124
+2018-09-10 20:06:47,921 INFO - Loss: = 0.155
+2018-09-10 20:06:48,760 INFO - Loss: = 0.121
+2018-09-10 20:06:49,607 INFO - Loss: = 0.135
+2018-09-10 20:06:50,454 INFO - Loss: = 0.140
+2018-09-10 20:06:51,294 INFO - Loss: = 0.125
+2018-09-10 20:06:52,145 INFO - Loss: = 0.146
+2018-09-10 20:06:52,995 INFO - Loss: = 0.150
+2018-09-10 20:06:53,846 INFO - Loss: = 0.130
+2018-09-10 20:06:54,693 INFO - Loss: = 0.142
+2018-09-10 20:06:55,529 INFO - Loss: = 0.143
+2018-09-10 20:06:56,383 INFO - Loss: = 0.118
+2018-09-10 20:06:57,218 INFO - Loss: = 0.174
+2018-09-10 20:06:57,337 INFO - Loss: = 0.106
+2018-09-10 20:06:57,337 INFO - EPOCH 8 ...
+2018-09-10 20:06:58,187 INFO - Loss: = 0.194
+2018-09-10 20:06:59,021 INFO - Loss: = 0.206
+2018-09-10 20:06:59,863 INFO - Loss: = 0.137
+2018-09-10 20:07:00,702 INFO - Loss: = 0.175
+2018-09-10 20:07:01,533 INFO - Loss: = 0.161
+2018-09-10 20:07:02,371 INFO - Loss: = 0.148
+2018-09-10 20:07:03,211 INFO - Loss: = 0.119
+2018-09-10 20:07:04,056 INFO - Loss: = 0.145
+2018-09-10 20:07:04,894 INFO - Loss: = 0.105
+2018-09-10 20:07:05,724 INFO - Loss: = 0.141
+2018-09-10 20:07:06,560 INFO - Loss: = 0.153
+2018-09-10 20:07:07,407 INFO - Loss: = 0.129
+2018-09-10 20:07:08,260 INFO - Loss: = 0.111
+2018-09-10 20:07:09,098 INFO - Loss: = 0.127
+2018-09-10 20:07:09,943 INFO - Loss: = 0.123
+2018-09-10 20:07:10,787 INFO - Loss: = 0.164
+2018-09-10 20:07:11,634 INFO - Loss: = 0.134
+2018-09-10 20:07:12,468 INFO - Loss: = 0.126
+2018-09-10 20:07:12,584 INFO - Loss: = 0.236
+2018-09-10 20:07:12,584 INFO - EPOCH 9 ...
+2018-09-10 20:07:13,434 INFO - Loss: = 0.163
+2018-09-10 20:07:14,290 INFO - Loss: = 0.181
+2018-09-10 20:07:15,121 INFO - Loss: = 0.159
+2018-09-10 20:07:15,959 INFO - Loss: = 0.160
+2018-09-10 20:07:16,799 INFO - Loss: = 0.153
+2018-09-10 20:07:17,637 INFO - Loss: = 0.151
+2018-09-10 20:07:18,481 INFO - Loss: = 0.150
+2018-09-10 20:07:19,326 INFO - Loss: = 0.129
+2018-09-10 20:07:20,166 INFO - Loss: = 0.151
+2018-09-10 20:07:21,002 INFO - Loss: = 0.126
+2018-09-10 20:07:21,841 INFO - Loss: = 0.140
+2018-09-10 20:07:22,674 INFO - Loss: = 0.134
+2018-09-10 20:07:23,520 INFO - Loss: = 0.161
+2018-09-10 20:07:24,368 INFO - Loss: = 0.137
+2018-09-10 20:07:25,205 INFO - Loss: = 0.116
+2018-09-10 20:07:26,052 INFO - Loss: = 0.132
+2018-09-10 20:07:26,901 INFO - Loss: = 0.137
+2018-09-10 20:07:27,739 INFO - Loss: = 0.123
+2018-09-10 20:07:27,855 INFO - Loss: = 0.103
+2018-09-10 20:07:27,856 INFO - EPOCH 10 ...
+2018-09-10 20:07:28,693 INFO - Loss: = 0.139
+2018-09-10 20:07:29,522 INFO - Loss: = 0.160
+2018-09-10 20:07:30,356 INFO - Loss: = 0.159
+2018-09-10 20:07:31,199 INFO - Loss: = 0.134
+2018-09-10 20:07:32,041 INFO - Loss: = 0.133
+2018-09-10 20:07:32,882 INFO - Loss: = 0.140
+2018-09-10 20:07:33,717 INFO - Loss: = 0.130
+2018-09-10 20:07:34,551 INFO - Loss: = 0.131
+2018-09-10 20:07:35,393 INFO - Loss: = 0.133
+2018-09-10 20:07:36,237 INFO - Loss: = 0.115
+2018-09-10 20:07:37,095 INFO - Loss: = 0.135
+2018-09-10 20:07:37,946 INFO - Loss: = 0.174
+2018-09-10 20:07:38,792 INFO - Loss: = 0.099
+2018-09-10 20:07:39,648 INFO - Loss: = 0.126
+2018-09-10 20:07:40,501 INFO - Loss: = 0.116
+2018-09-10 20:07:41,361 INFO - Loss: = 0.133
+2018-09-10 20:07:42,209 INFO - Loss: = 0.118
+2018-09-10 20:07:43,106 INFO - Loss: = 0.121
+2018-09-10 20:07:43,179 INFO - Loss: = 0.133
+2018-09-10 20:07:43,179 INFO - EPOCH 11 ...
+2018-09-10 20:07:44,030 INFO - Loss: = 0.140
+2018-09-10 20:07:44,885 INFO - Loss: = 0.121
+2018-09-10 20:07:45,731 INFO - Loss: = 0.122
+2018-09-10 20:07:46,582 INFO - Loss: = 0.106
+2018-09-10 20:07:47,437 INFO - Loss: = 0.108
+2018-09-10 20:07:48,301 INFO - Loss: = 0.121
+2018-09-10 20:07:49,151 INFO - Loss: = 0.097
+2018-09-10 20:07:50,007 INFO - Loss: = 0.127
+2018-09-10 20:07:50,843 INFO - Loss: = 0.141
+2018-09-10 20:07:51,677 INFO - Loss: = 0.128
+2018-09-10 20:07:52,525 INFO - Loss: = 0.109
+2018-09-10 20:07:53,368 INFO - Loss: = 0.098
+2018-09-10 20:07:54,199 INFO - Loss: = 0.116
+2018-09-10 20:07:55,049 INFO - Loss: = 0.113
+2018-09-10 20:07:55,888 INFO - Loss: = 0.122
+2018-09-10 20:07:56,736 INFO - Loss: = 0.105
+2018-09-10 20:07:57,579 INFO - Loss: = 0.093
+2018-09-10 20:07:58,427 INFO - Loss: = 0.128
+2018-09-10 20:07:58,544 INFO - Loss: = 0.149
+2018-09-10 20:07:58,544 INFO - EPOCH 12 ...
+2018-09-10 20:07:59,396 INFO - Loss: = 0.120
+2018-09-10 20:08:00,254 INFO - Loss: = 0.106
+2018-09-10 20:08:01,105 INFO - Loss: = 0.116
+2018-09-10 20:08:01,954 INFO - Loss: = 0.118
+2018-09-10 20:08:02,805 INFO - Loss: = 0.111
+2018-09-10 20:08:03,668 INFO - Loss: = 0.099
+2018-09-10 20:08:04,511 INFO - Loss: = 0.122
+2018-09-10 20:08:05,358 INFO - Loss: = 0.123
+2018-09-10 20:08:06,204 INFO - Loss: = 0.115
+2018-09-10 20:08:07,048 INFO - Loss: = 0.104
+2018-09-10 20:08:07,879 INFO - Loss: = 0.115
+2018-09-10 20:08:08,737 INFO - Loss: = 0.122
+2018-09-10 20:08:09,584 INFO - Loss: = 0.123
+2018-09-10 20:08:10,441 INFO - Loss: = 0.101
+2018-09-10 20:08:11,285 INFO - Loss: = 0.105
+2018-09-10 20:08:12,121 INFO - Loss: = 0.131
+2018-09-10 20:08:12,971 INFO - Loss: = 0.113
+2018-09-10 20:08:13,822 INFO - Loss: = 0.100
+2018-09-10 20:08:13,939 INFO - Loss: = 0.186
+2018-09-10 20:08:13,939 INFO - EPOCH 13 ...
+2018-09-10 20:08:14,788 INFO - Loss: = 0.115
+2018-09-10 20:08:15,625 INFO - Loss: = 0.107
+2018-09-10 20:08:16,483 INFO - Loss: = 0.129
+2018-09-10 20:08:17,344 INFO - Loss: = 0.102
+2018-09-10 20:08:18,195 INFO - Loss: = 0.112
+2018-09-10 20:08:19,045 INFO - Loss: = 0.094
+2018-09-10 20:08:19,908 INFO - Loss: = 0.092
+2018-09-10 20:08:20,750 INFO - Loss: = 0.075
+2018-09-10 20:08:21,592 INFO - Loss: = 0.114
+2018-09-10 20:08:22,444 INFO - Loss: = 0.100
+2018-09-10 20:08:23,302 INFO - Loss: = 0.105
+2018-09-10 20:08:24,146 INFO - Loss: = 0.119
+2018-09-10 20:08:24,996 INFO - Loss: = 0.094
+2018-09-10 20:08:25,847 INFO - Loss: = 0.119
+2018-09-10 20:08:26,691 INFO - Loss: = 0.112
+2018-09-10 20:08:27,528 INFO - Loss: = 0.087
+2018-09-10 20:08:28,372 INFO - Loss: = 0.101
+2018-09-10 20:08:29,215 INFO - Loss: = 0.099
+2018-09-10 20:08:29,336 INFO - Loss: = 0.051
+2018-09-10 20:08:29,336 INFO - EPOCH 14 ...
+2018-09-10 20:08:30,195 INFO - Loss: = 0.112
+2018-09-10 20:08:31,043 INFO - Loss: = 0.071
+2018-09-10 20:08:31,887 INFO - Loss: = 0.108
+2018-09-10 20:08:32,740 INFO - Loss: = 0.120
+2018-09-10 20:08:33,590 INFO - Loss: = 0.092
+2018-09-10 20:08:34,440 INFO - Loss: = 0.085
+2018-09-10 20:08:35,286 INFO - Loss: = 0.097
+2018-09-10 20:08:36,137 INFO - Loss: = 0.102
+2018-09-10 20:08:36,985 INFO - Loss: = 0.117
+2018-09-10 20:08:37,831 INFO - Loss: = 0.106
+2018-09-10 20:08:38,674 INFO - Loss: = 0.090
+2018-09-10 20:08:39,521 INFO - Loss: = 0.100
+2018-09-10 20:08:40,371 INFO - Loss: = 0.109
+2018-09-10 20:08:41,227 INFO - Loss: = 0.092
+2018-09-10 20:08:42,078 INFO - Loss: = 0.101
+2018-09-10 20:08:42,943 INFO - Loss: = 0.097
+2018-09-10 20:08:43,803 INFO - Loss: = 0.104
+2018-09-10 20:08:44,662 INFO - Loss: = 0.116
+2018-09-10 20:08:44,784 INFO - Loss: = 0.075
+2018-09-10 20:08:44,784 INFO - EPOCH 15 ...
+2018-09-10 20:08:45,632 INFO - Loss: = 0.081
+2018-09-10 20:08:46,472 INFO - Loss: = 0.097
+2018-09-10 20:08:47,322 INFO - Loss: = 0.093
+2018-09-10 20:08:48,170 INFO - Loss: = 0.081
+2018-09-10 20:08:49,013 INFO - Loss: = 0.085
+2018-09-10 20:08:49,863 INFO - Loss: = 0.099
+2018-09-10 20:08:50,712 INFO - Loss: = 0.071
+2018-09-10 20:08:51,568 INFO - Loss: = 0.096
+2018-09-10 20:08:52,419 INFO - Loss: = 0.078
+2018-09-10 20:08:53,274 INFO - Loss: = 0.099
+2018-09-10 20:08:54,129 INFO - Loss: = 0.094
+2018-09-10 20:08:54,986 INFO - Loss: = 0.093
+2018-09-10 20:08:55,843 INFO - Loss: = 0.074
+2018-09-10 20:08:56,710 INFO - Loss: = 0.091
+2018-09-10 20:08:57,567 INFO - Loss: = 0.105
+2018-09-10 20:08:58,421 INFO - Loss: = 0.092
+2018-09-10 20:08:59,269 INFO - Loss: = 0.089
+2018-09-10 20:09:00,119 INFO - Loss: = 0.094
+2018-09-10 20:09:00,247 INFO - Loss: = 0.157
+2018-09-10 20:09:00,247 INFO - EPOCH 16 ...
+2018-09-10 20:09:01,116 INFO - Loss: = 0.102
+2018-09-10 20:09:01,975 INFO - Loss: = 0.138
+2018-09-10 20:09:02,836 INFO - Loss: = 0.091
+2018-09-10 20:09:03,700 INFO - Loss: = 0.093
+2018-09-10 20:09:04,567 INFO - Loss: = 0.102
+2018-09-10 20:09:05,419 INFO - Loss: = 0.082
+2018-09-10 20:09:06,279 INFO - Loss: = 0.103
+2018-09-10 20:09:07,143 INFO - Loss: = 0.095
+2018-09-10 20:09:08,001 INFO - Loss: = 0.084
+2018-09-10 20:09:08,869 INFO - Loss: = 0.097
+2018-09-10 20:09:09,743 INFO - Loss: = 0.111
+2018-09-10 20:09:10,607 INFO - Loss: = 0.100
+2018-09-10 20:09:11,473 INFO - Loss: = 0.089
+2018-09-10 20:09:12,348 INFO - Loss: = 0.104
+2018-09-10 20:09:13,213 INFO - Loss: = 0.092
+2018-09-10 20:09:14,078 INFO - Loss: = 0.086
+2018-09-10 20:09:14,929 INFO - Loss: = 0.069
+2018-09-10 20:09:15,787 INFO - Loss: = 0.112
+2018-09-10 20:09:15,920 INFO - Loss: = 0.037
+2018-09-10 20:09:15,920 INFO - EPOCH 17 ...
+2018-09-10 20:09:16,779 INFO - Loss: = 0.097
+2018-09-10 20:09:17,638 INFO - Loss: = 0.085
+2018-09-10 20:09:18,490 INFO - Loss: = 0.106
+2018-09-10 20:09:19,415 INFO - Loss: = 0.106
+2018-09-10 20:09:20,202 INFO - Loss: = 0.088
+2018-09-10 20:09:21,066 INFO - Loss: = 0.076
+2018-09-10 20:09:21,929 INFO - Loss: = 0.117
+2018-09-10 20:09:22,795 INFO - Loss: = 0.081
+2018-09-10 20:09:23,647 INFO - Loss: = 0.076
+2018-09-10 20:09:24,509 INFO - Loss: = 0.114
+2018-09-10 20:09:25,359 INFO - Loss: = 0.097
+2018-09-10 20:09:26,220 INFO - Loss: = 0.083
+2018-09-10 20:09:27,078 INFO - Loss: = 0.083
+2018-09-10 20:09:27,937 INFO - Loss: = 0.086
+2018-09-10 20:09:28,789 INFO - Loss: = 0.077
+2018-09-10 20:09:29,654 INFO - Loss: = 0.111
+2018-09-10 20:09:30,528 INFO - Loss: = 0.090
+2018-09-10 20:09:31,398 INFO - Loss: = 0.087
+2018-09-10 20:09:31,538 INFO - Loss: = 0.100
+2018-09-10 20:09:31,538 INFO - EPOCH 18 ...
+2018-09-10 20:09:32,399 INFO - Loss: = 0.086
+2018-09-10 20:09:33,251 INFO - Loss: = 0.080
+2018-09-10 20:09:34,110 INFO - Loss: = 0.067
+2018-09-10 20:09:34,968 INFO - Loss: = 0.097
+2018-09-10 20:09:35,825 INFO - Loss: = 0.092
+2018-09-10 20:09:36,686 INFO - Loss: = 0.119
+2018-09-10 20:09:37,553 INFO - Loss: = 0.083
+2018-09-10 20:09:38,418 INFO - Loss: = 0.112
+2018-09-10 20:09:39,294 INFO - Loss: = 0.074
+2018-09-10 20:09:40,159 INFO - Loss: = 0.086
+2018-09-10 20:09:41,028 INFO - Loss: = 0.088
+2018-09-10 20:09:41,899 INFO - Loss: = 0.085
+2018-09-10 20:09:42,764 INFO - Loss: = 0.066
+2018-09-10 20:09:43,622 INFO - Loss: = 0.072
+2018-09-10 20:09:44,499 INFO - Loss: = 0.073
+2018-09-10 20:09:45,366 INFO - Loss: = 0.095
+2018-09-10 20:09:46,237 INFO - Loss: = 0.104
+2018-09-10 20:09:47,103 INFO - Loss: = 0.079
+2018-09-10 20:09:47,240 INFO - Loss: = 0.046
+2018-09-10 20:09:47,241 INFO - EPOCH 19 ...
+2018-09-10 20:09:48,095 INFO - Loss: = 0.076
+2018-09-10 20:09:48,956 INFO - Loss: = 0.098
+2018-09-10 20:09:49,808 INFO - Loss: = 0.083
+2018-09-10 20:09:50,660 INFO - Loss: = 0.055
+2018-09-10 20:09:51,520 INFO - Loss: = 0.074
+2018-09-10 20:09:52,378 INFO - Loss: = 0.085
+2018-09-10 20:09:53,238 INFO - Loss: = 0.084
+2018-09-10 20:09:54,086 INFO - Loss: = 0.078
+2018-09-10 20:09:54,945 INFO - Loss: = 0.095
+2018-09-10 20:09:55,796 INFO - Loss: = 0.062
+2018-09-10 20:09:56,646 INFO - Loss: = 0.082
+2018-09-10 20:09:57,499 INFO - Loss: = 0.067
+2018-09-10 20:09:58,352 INFO - Loss: = 0.069
+2018-09-10 20:09:59,209 INFO - Loss: = 0.089
+2018-09-10 20:10:00,061 INFO - Loss: = 0.077
+2018-09-10 20:10:00,917 INFO - Loss: = 0.061
+2018-09-10 20:10:01,779 INFO - Loss: = 0.077
+2018-09-10 20:10:02,635 INFO - Loss: = 0.068
+2018-09-10 20:10:02,766 INFO - Loss: = 0.057
+2018-09-10 20:10:02,766 INFO - EPOCH 20 ...
+2018-09-10 20:10:03,624 INFO - Loss: = 0.072
+2018-09-10 20:10:04,482 INFO - Loss: = 0.068
+2018-09-10 20:10:05,338 INFO - Loss: = 0.066
+2018-09-10 20:10:06,199 INFO - Loss: = 0.046
+2018-09-10 20:10:07,063 INFO - Loss: = 0.087
+2018-09-10 20:10:07,923 INFO - Loss: = 0.079
+2018-09-10 20:10:08,777 INFO - Loss: = 0.077
+2018-09-10 20:10:09,641 INFO - Loss: = 0.072
+2018-09-10 20:10:10,490 INFO - Loss: = 0.095
+2018-09-10 20:10:11,337 INFO - Loss: = 0.076
+2018-09-10 20:10:12,175 INFO - Loss: = 0.096
+2018-09-10 20:10:13,019 INFO - Loss: = 0.081
+2018-09-10 20:10:13,860 INFO - Loss: = 0.079
+2018-09-10 20:10:14,704 INFO - Loss: = 0.070
+2018-09-10 20:10:15,541 INFO - Loss: = 0.077
+2018-09-10 20:10:16,377 INFO - Loss: = 0.102
+2018-09-10 20:10:17,224 INFO - Loss: = 0.060
+2018-09-10 20:10:18,059 INFO - Loss: = 0.071
+2018-09-10 20:10:18,182 INFO - Loss: = 0.023
+2018-09-10 20:10:18,184 INFO - EPOCH 21 ...
+2018-09-10 20:10:19,028 INFO - Loss: = 0.084
+2018-09-10 20:10:19,872 INFO - Loss: = 0.068
+2018-09-10 20:10:20,715 INFO - Loss: = 0.074
+2018-09-10 20:10:21,552 INFO - Loss: = 0.057
+2018-09-10 20:10:22,395 INFO - Loss: = 0.081
+2018-09-10 20:10:23,240 INFO - Loss: = 0.070
+2018-09-10 20:10:24,073 INFO - Loss: = 0.062
+2018-09-10 20:10:24,912 INFO - Loss: = 0.063
+2018-09-10 20:10:25,770 INFO - Loss: = 0.079
+2018-09-10 20:10:26,627 INFO - Loss: = 0.066
+2018-09-10 20:10:27,474 INFO - Loss: = 0.064
+2018-09-10 20:10:28,315 INFO - Loss: = 0.064
+2018-09-10 20:10:29,156 INFO - Loss: = 0.071
+2018-09-10 20:10:30,010 INFO - Loss: = 0.083
+2018-09-10 20:10:30,859 INFO - Loss: = 0.069
+2018-09-10 20:10:31,715 INFO - Loss: = 0.074
+2018-09-10 20:10:32,565 INFO - Loss: = 0.063
+2018-09-10 20:10:33,415 INFO - Loss: = 0.061
+2018-09-10 20:10:33,537 INFO - Loss: = 0.027
+2018-09-10 20:10:33,537 INFO - EPOCH 22 ...
+2018-09-10 20:10:34,379 INFO - Loss: = 0.092
+2018-09-10 20:10:35,213 INFO - Loss: = 0.101
+2018-09-10 20:10:36,048 INFO - Loss: = 0.087
+2018-09-10 20:10:36,881 INFO - Loss: = 0.086
+2018-09-10 20:10:37,723 INFO - Loss: = 0.077
+2018-09-10 20:10:38,563 INFO - Loss: = 0.086
+2018-09-10 20:10:39,408 INFO - Loss: = 0.092
+2018-09-10 20:10:40,245 INFO - Loss: = 0.092
+2018-09-10 20:10:41,100 INFO - Loss: = 0.075
+2018-09-10 20:10:41,956 INFO - Loss: = 0.077
+2018-09-10 20:10:42,796 INFO - Loss: = 0.080
+2018-09-10 20:10:43,629 INFO - Loss: = 0.065
+2018-09-10 20:10:44,472 INFO - Loss: = 0.065
+2018-09-10 20:10:45,308 INFO - Loss: = 0.074
+2018-09-10 20:10:46,150 INFO - Loss: = 0.088
+2018-09-10 20:10:46,986 INFO - Loss: = 0.065
+2018-09-10 20:10:47,832 INFO - Loss: = 0.081
+2018-09-10 20:10:48,677 INFO - Loss: = 0.054
+2018-09-10 20:10:48,793 INFO - Loss: = 0.064
+2018-09-10 20:10:48,794 INFO - EPOCH 23 ...
+2018-09-10 20:10:49,642 INFO - Loss: = 0.082
+2018-09-10 20:10:50,478 INFO - Loss: = 0.073
+2018-09-10 20:10:51,319 INFO - Loss: = 0.086
+2018-09-10 20:10:52,158 INFO - Loss: = 0.075
+2018-09-10 20:10:52,993 INFO - Loss: = 0.080
+2018-09-10 20:10:53,827 INFO - Loss: = 0.062
+2018-09-10 20:10:54,666 INFO - Loss: = 0.073
+2018-09-10 20:10:55,500 INFO - Loss: = 0.083
+2018-09-10 20:10:56,349 INFO - Loss: = 0.072
+2018-09-10 20:10:57,196 INFO - Loss: = 0.084
+2018-09-10 20:10:58,056 INFO - Loss: = 0.077
+2018-09-10 20:10:58,906 INFO - Loss: = 0.078
+2018-09-10 20:10:59,767 INFO - Loss: = 0.081
+2018-09-10 20:11:00,611 INFO - Loss: = 0.066
+2018-09-10 20:11:01,447 INFO - Loss: = 0.064
+2018-09-10 20:11:02,279 INFO - Loss: = 0.056
+2018-09-10 20:11:03,120 INFO - Loss: = 0.083
+2018-09-10 20:11:03,957 INFO - Loss: = 0.049
+2018-09-10 20:11:04,075 INFO - Loss: = 0.055
+2018-09-10 20:11:04,075 INFO - EPOCH 24 ...
+2018-09-10 20:11:04,924 INFO - Loss: = 0.061
+2018-09-10 20:11:05,771 INFO - Loss: = 0.066
+2018-09-10 20:11:06,609 INFO - Loss: = 0.081
+2018-09-10 20:11:07,463 INFO - Loss: = 0.050
+2018-09-10 20:11:08,326 INFO - Loss: = 0.060
+2018-09-10 20:11:09,182 INFO - Loss: = 0.084
+2018-09-10 20:11:10,034 INFO - Loss: = 0.072
+2018-09-10 20:11:10,883 INFO - Loss: = 0.062
+2018-09-10 20:11:11,733 INFO - Loss: = 0.080
+2018-09-10 20:11:12,582 INFO - Loss: = 0.064
+2018-09-10 20:11:13,415 INFO - Loss: = 0.078
+2018-09-10 20:11:14,255 INFO - Loss: = 0.057
+2018-09-10 20:11:15,109 INFO - Loss: = 0.077
+2018-09-10 20:11:15,944 INFO - Loss: = 0.057
+2018-09-10 20:11:16,786 INFO - Loss: = 0.052
+2018-09-10 20:11:17,620 INFO - Loss: = 0.083
+2018-09-10 20:11:18,457 INFO - Loss: = 0.062
+2018-09-10 20:11:19,306 INFO - Loss: = 0.058
+2018-09-10 20:11:19,427 INFO - Loss: = 0.034
+2018-09-10 20:11:19,427 INFO - EPOCH 25 ...
+2018-09-10 20:11:20,278 INFO - Loss: = 0.058
+2018-09-10 20:11:21,136 INFO - Loss: = 0.052
+2018-09-10 20:11:21,969 INFO - Loss: = 0.052
+2018-09-10 20:11:22,808 INFO - Loss: = 0.062
+2018-09-10 20:11:23,653 INFO - Loss: = 0.059
+2018-09-10 20:11:24,498 INFO - Loss: = 0.051
+2018-09-10 20:11:25,337 INFO - Loss: = 0.053
+2018-09-10 20:11:26,181 INFO - Loss: = 0.049
+2018-09-10 20:11:27,026 INFO - Loss: = 0.080
+2018-09-10 20:11:27,864 INFO - Loss: = 0.063
+2018-09-10 20:11:28,718 INFO - Loss: = 0.051
+2018-09-10 20:11:29,561 INFO - Loss: = 0.079
+2018-09-10 20:11:30,415 INFO - Loss: = 0.051
+2018-09-10 20:11:31,256 INFO - Loss: = 0.062
+2018-09-10 20:11:32,088 INFO - Loss: = 0.044
+2018-09-10 20:11:32,926 INFO - Loss: = 0.046
+2018-09-10 20:11:33,758 INFO - Loss: = 0.070
+2018-09-10 20:11:34,600 INFO - Loss: = 0.078
+2018-09-10 20:11:34,715 INFO - Loss: = 0.102
+2018-09-10 20:11:34,715 INFO - EPOCH 26 ...
+2018-09-10 20:11:35,558 INFO - Loss: = 0.060
+2018-09-10 20:11:36,404 INFO - Loss: = 0.067
+2018-09-10 20:11:37,235 INFO - Loss: = 0.076
+2018-09-10 20:11:38,073 INFO - Loss: = 0.072
+2018-09-10 20:11:38,920 INFO - Loss: = 0.076
+2018-09-10 20:11:39,760 INFO - Loss: = 0.067
+2018-09-10 20:11:40,597 INFO - Loss: = 0.055
+2018-09-10 20:11:41,448 INFO - Loss: = 0.064
+2018-09-10 20:11:42,286 INFO - Loss: = 0.063
+2018-09-10 20:11:43,133 INFO - Loss: = 0.057
+2018-09-10 20:11:43,966 INFO - Loss: = 0.063
+2018-09-10 20:11:44,821 INFO - Loss: = 0.057
+2018-09-10 20:11:45,678 INFO - Loss: = 0.055
+2018-09-10 20:11:46,535 INFO - Loss: = 0.071
+2018-09-10 20:11:47,374 INFO - Loss: = 0.049
+2018-09-10 20:11:48,214 INFO - Loss: = 0.054
+2018-09-10 20:11:49,052 INFO - Loss: = 0.053
+2018-09-10 20:11:49,897 INFO - Loss: = 0.054
+2018-09-10 20:11:50,015 INFO - Loss: = 0.046
+2018-09-10 20:11:50,016 INFO - EPOCH 27 ...
+2018-09-10 20:11:50,865 INFO - Loss: = 0.054
+2018-09-10 20:11:51,712 INFO - Loss: = 0.057
+2018-09-10 20:11:52,564 INFO - Loss: = 0.047
+2018-09-10 20:11:53,419 INFO - Loss: = 0.054
+2018-09-10 20:11:54,254 INFO - Loss: = 0.069
+2018-09-10 20:11:55,092 INFO - Loss: = 0.054
+2018-09-10 20:11:55,939 INFO - Loss: = 0.064
+2018-09-10 20:11:56,776 INFO - Loss: = 0.075
+2018-09-10 20:11:57,613 INFO - Loss: = 0.048
+2018-09-10 20:11:58,459 INFO - Loss: = 0.060
+2018-09-10 20:11:59,300 INFO - Loss: = 0.081
+2018-09-10 20:12:00,143 INFO - Loss: = 0.063
+2018-09-10 20:12:00,993 INFO - Loss: = 0.054
+2018-09-10 20:12:01,831 INFO - Loss: = 0.065
+2018-09-10 20:12:02,664 INFO - Loss: = 0.056
+2018-09-10 20:12:03,495 INFO - Loss: = 0.082
+2018-09-10 20:12:04,327 INFO - Loss: = 0.056
+2018-09-10 20:12:05,168 INFO - Loss: = 0.053
+2018-09-10 20:12:05,283 INFO - Loss: = 0.018
+2018-09-10 20:12:05,283 INFO - EPOCH 28 ...
+2018-09-10 20:12:06,128 INFO - Loss: = 0.068
+2018-09-10 20:12:06,971 INFO - Loss: = 0.054
+2018-09-10 20:12:07,807 INFO - Loss: = 0.051
+2018-09-10 20:12:08,642 INFO - Loss: = 0.055
+2018-09-10 20:12:09,482 INFO - Loss: = 0.064
+2018-09-10 20:12:10,325 INFO - Loss: = 0.072
+2018-09-10 20:12:11,162 INFO - Loss: = 0.053
+2018-09-10 20:12:12,007 INFO - Loss: = 0.058
+2018-09-10 20:12:12,847 INFO - Loss: = 0.069
+2018-09-10 20:12:13,684 INFO - Loss: = 0.051
+2018-09-10 20:12:14,519 INFO - Loss: = 0.063
+2018-09-10 20:12:15,359 INFO - Loss: = 0.064
+2018-09-10 20:12:16,190 INFO - Loss: = 0.043
+2018-09-10 20:12:17,037 INFO - Loss: = 0.040
+2018-09-10 20:12:17,883 INFO - Loss: = 0.057
+2018-09-10 20:12:18,733 INFO - Loss: = 0.045
+2018-09-10 20:12:19,580 INFO - Loss: = 0.073
+2018-09-10 20:12:20,433 INFO - Loss: = 0.050
+2018-09-10 20:12:20,554 INFO - Loss: = 0.066
+2018-09-10 20:12:20,554 INFO - EPOCH 29 ...
+2018-09-10 20:12:21,404 INFO - Loss: = 0.050
+2018-09-10 20:12:22,261 INFO - Loss: = 0.065
+2018-09-10 20:12:23,096 INFO - Loss: = 0.057
+2018-09-10 20:12:23,932 INFO - Loss: = 0.062
+2018-09-10 20:12:24,779 INFO - Loss: = 0.062
+2018-09-10 20:12:25,624 INFO - Loss: = 0.058
+2018-09-10 20:12:26,464 INFO - Loss: = 0.052
+2018-09-10 20:12:27,307 INFO - Loss: = 0.042
+2018-09-10 20:12:28,145 INFO - Loss: = 0.062
+2018-09-10 20:12:28,986 INFO - Loss: = 0.050
+2018-09-10 20:12:29,831 INFO - Loss: = 0.045
+2018-09-10 20:12:30,678 INFO - Loss: = 0.056
+2018-09-10 20:12:31,516 INFO - Loss: = 0.058
+2018-09-10 20:12:32,368 INFO - Loss: = 0.051
+2018-09-10 20:12:33,204 INFO - Loss: = 0.052
+2018-09-10 20:12:34,038 INFO - Loss: = 0.063
+2018-09-10 20:12:34,881 INFO - Loss: = 0.049
+2018-09-10 20:12:35,719 INFO - Loss: = 0.040
+2018-09-10 20:12:35,840 INFO - Loss: = 0.047
+2018-09-10 20:12:35,840 INFO - EPOCH 30 ...
+2018-09-10 20:12:36,691 INFO - Loss: = 0.056
+2018-09-10 20:12:37,543 INFO - Loss: = 0.061
+2018-09-10 20:12:38,399 INFO - Loss: = 0.049
+2018-09-10 20:12:39,240 INFO - Loss: = 0.046
+2018-09-10 20:12:40,075 INFO - Loss: = 0.050
+2018-09-10 20:12:40,909 INFO - Loss: = 0.047
+2018-09-10 20:12:41,751 INFO - Loss: = 0.046
+2018-09-10 20:12:42,586 INFO - Loss: = 0.054
+2018-09-10 20:12:43,419 INFO - Loss: = 0.056
+2018-09-10 20:12:44,263 INFO - Loss: = 0.049
+2018-09-10 20:12:45,107 INFO - Loss: = 0.049
+2018-09-10 20:12:45,937 INFO - Loss: = 0.063
+2018-09-10 20:12:46,782 INFO - Loss: = 0.051
+2018-09-10 20:12:47,630 INFO - Loss: = 0.047
+2018-09-10 20:12:48,470 INFO - Loss: = 0.049
+2018-09-10 20:12:49,309 INFO - Loss: = 0.065
+2018-09-10 20:12:50,156 INFO - Loss: = 0.041
+2018-09-10 20:12:50,991 INFO - Loss: = 0.050
+2018-09-10 20:12:51,110 INFO - Loss: = 0.028
+2018-09-10 20:12:51,110 INFO - EPOCH 31 ...
+2018-09-10 20:12:51,958 INFO - Loss: = 0.052
+2018-09-10 20:12:52,808 INFO - Loss: = 0.058
+2018-09-10 20:12:53,647 INFO - Loss: = 0.044
+2018-09-10 20:12:54,494 INFO - Loss: = 0.042
+2018-09-10 20:12:55,336 INFO - Loss: = 0.048
+2018-09-10 20:12:56,177 INFO - Loss: = 0.041
+2018-09-10 20:12:57,012 INFO - Loss: = 0.044
+2018-09-10 20:12:57,860 INFO - Loss: = 0.056
+2018-09-10 20:12:58,707 INFO - Loss: = 0.046
+2018-09-10 20:12:59,568 INFO - Loss: = 0.039
+2018-09-10 20:13:00,428 INFO - Loss: = 0.052
+2018-09-10 20:13:01,273 INFO - Loss: = 0.044
+2018-09-10 20:13:02,129 INFO - Loss: = 0.054
+2018-09-10 20:13:02,978 INFO - Loss: = 0.043
+2018-09-10 20:13:03,824 INFO - Loss: = 0.054
+2018-09-10 20:13:04,660 INFO - Loss: = 0.044
+2018-09-10 20:13:05,505 INFO - Loss: = 0.041
+2018-09-10 20:13:06,346 INFO - Loss: = 0.050
+2018-09-10 20:13:06,464 INFO - Loss: = 0.117
+2018-09-10 20:13:06,465 INFO - EPOCH 32 ...
+2018-09-10 20:13:07,314 INFO - Loss: = 0.040
+2018-09-10 20:13:08,161 INFO - Loss: = 0.050
+2018-09-10 20:13:09,004 INFO - Loss: = 0.042
+2018-09-10 20:13:09,849 INFO - Loss: = 0.049
+2018-09-10 20:13:10,691 INFO - Loss: = 0.045
+2018-09-10 20:13:11,526 INFO - Loss: = 0.049
+2018-09-10 20:13:12,369 INFO - Loss: = 0.062
+2018-09-10 20:13:13,213 INFO - Loss: = 0.050
+2018-09-10 20:13:14,050 INFO - Loss: = 0.042
+2018-09-10 20:13:14,892 INFO - Loss: = 0.052
+2018-09-10 20:13:15,740 INFO - Loss: = 0.054
+2018-09-10 20:13:16,576 INFO - Loss: = 0.036
+2018-09-10 20:13:17,419 INFO - Loss: = 0.057
+2018-09-10 20:13:18,256 INFO - Loss: = 0.054
+2018-09-10 20:13:19,091 INFO - Loss: = 0.048
+2018-09-10 20:13:19,932 INFO - Loss: = 0.071
+2018-09-10 20:13:20,774 INFO - Loss: = 0.049
+2018-09-10 20:13:21,615 INFO - Loss: = 0.043
+2018-09-10 20:13:21,737 INFO - Loss: = 0.047
+2018-09-10 20:13:21,737 INFO - EPOCH 33 ...
+2018-09-10 20:13:22,587 INFO - Loss: = 0.054
+2018-09-10 20:13:23,437 INFO - Loss: = 0.038
+2018-09-10 20:13:24,282 INFO - Loss: = 0.053
+2018-09-10 20:13:25,124 INFO - Loss: = 0.043
+2018-09-10 20:13:25,960 INFO - Loss: = 0.043
+2018-09-10 20:13:26,808 INFO - Loss: = 0.043
+2018-09-10 20:13:27,650 INFO - Loss: = 0.046
+2018-09-10 20:13:28,484 INFO - Loss: = 0.038
+2018-09-10 20:13:29,334 INFO - Loss: = 0.041
+2018-09-10 20:13:30,172 INFO - Loss: = 0.046
+2018-09-10 20:13:31,021 INFO - Loss: = 0.042
+2018-09-10 20:13:31,869 INFO - Loss: = 0.044
+2018-09-10 20:13:32,705 INFO - Loss: = 0.055
+2018-09-10 20:13:33,556 INFO - Loss: = 0.048
+2018-09-10 20:13:34,391 INFO - Loss: = 0.044
+2018-09-10 20:13:35,233 INFO - Loss: = 0.043
+2018-09-10 20:13:36,075 INFO - Loss: = 0.053
+2018-09-10 20:13:36,909 INFO - Loss: = 0.043
+2018-09-10 20:13:37,027 INFO - Loss: = 0.059
+2018-09-10 20:13:37,027 INFO - EPOCH 34 ...
+2018-09-10 20:13:37,875 INFO - Loss: = 0.041
+2018-09-10 20:13:38,717 INFO - Loss: = 0.043
+2018-09-10 20:13:39,560 INFO - Loss: = 0.043
+2018-09-10 20:13:40,394 INFO - Loss: = 0.040
+2018-09-10 20:13:41,229 INFO - Loss: = 0.046
+2018-09-10 20:13:42,071 INFO - Loss: = 0.041
+2018-09-10 20:13:42,907 INFO - Loss: = 0.041
+2018-09-10 20:13:43,749 INFO - Loss: = 0.046
+2018-09-10 20:13:44,583 INFO - Loss: = 0.052
+2018-09-10 20:13:45,424 INFO - Loss: = 0.035
+2018-09-10 20:13:46,267 INFO - Loss: = 0.047
+2018-09-10 20:13:47,115 INFO - Loss: = 0.054
+2018-09-10 20:13:47,955 INFO - Loss: = 0.036
+2018-09-10 20:13:48,800 INFO - Loss: = 0.041
+2018-09-10 20:13:49,642 INFO - Loss: = 0.036
+2018-09-10 20:13:50,481 INFO - Loss: = 0.047
+2018-09-10 20:13:51,328 INFO - Loss: = 0.042
+2018-09-10 20:13:52,176 INFO - Loss: = 0.043
+2018-09-10 20:13:52,295 INFO - Loss: = 0.071
+2018-09-10 20:13:52,296 INFO - EPOCH 35 ...
+2018-09-10 20:13:53,135 INFO - Loss: = 0.050
+2018-09-10 20:13:53,972 INFO - Loss: = 0.048
+2018-09-10 20:13:54,817 INFO - Loss: = 0.056
+2018-09-10 20:13:55,657 INFO - Loss: = 0.045
+2018-09-10 20:13:56,498 INFO - Loss: = 0.045
+2018-09-10 20:13:57,339 INFO - Loss: = 0.031
+2018-09-10 20:13:58,182 INFO - Loss: = 0.043
+2018-09-10 20:13:59,026 INFO - Loss: = 0.052
+2018-09-10 20:13:59,862 INFO - Loss: = 0.045
+2018-09-10 20:14:00,699 INFO - Loss: = 0.053
+2018-09-10 20:14:01,544 INFO - Loss: = 0.048
+2018-09-10 20:14:02,390 INFO - Loss: = 0.037
+2018-09-10 20:14:03,225 INFO - Loss: = 0.039
+2018-09-10 20:14:04,067 INFO - Loss: = 0.039
+2018-09-10 20:14:04,902 INFO - Loss: = 0.046
+2018-09-10 20:14:05,747 INFO - Loss: = 0.033
+2018-09-10 20:14:06,583 INFO - Loss: = 0.045
+2018-09-10 20:14:07,426 INFO - Loss: = 0.031
+2018-09-10 20:14:07,545 INFO - Loss: = 0.025
+2018-09-10 20:14:07,545 INFO - EPOCH 36 ...
+2018-09-10 20:14:08,395 INFO - Loss: = 0.037
+2018-09-10 20:14:09,244 INFO - Loss: = 0.035
+2018-09-10 20:14:10,089 INFO - Loss: = 0.050
+2018-09-10 20:14:10,939 INFO - Loss: = 0.045
+2018-09-10 20:14:11,779 INFO - Loss: = 0.035
+2018-09-10 20:14:12,619 INFO - Loss: = 0.037
+2018-09-10 20:14:13,468 INFO - Loss: = 0.044
+2018-09-10 20:14:14,313 INFO - Loss: = 0.044
+2018-09-10 20:14:15,153 INFO - Loss: = 0.033
+2018-09-10 20:14:15,998 INFO - Loss: = 0.038
+2018-09-10 20:14:16,832 INFO - Loss: = 0.035
+2018-09-10 20:14:17,676 INFO - Loss: = 0.044
+2018-09-10 20:14:18,515 INFO - Loss: = 0.044
+2018-09-10 20:14:19,363 INFO - Loss: = 0.034
+2018-09-10 20:14:20,201 INFO - Loss: = 0.048
+2018-09-10 20:14:21,047 INFO - Loss: = 0.038
+2018-09-10 20:14:21,886 INFO - Loss: = 0.043
+2018-09-10 20:14:22,733 INFO - Loss: = 0.055
+2018-09-10 20:14:22,849 INFO - Loss: = 0.035
+2018-09-10 20:14:22,849 INFO - EPOCH 37 ...
+2018-09-10 20:14:23,697 INFO - Loss: = 0.043
+2018-09-10 20:14:24,544 INFO - Loss: = 0.047
+2018-09-10 20:14:25,383 INFO - Loss: = 0.045
+2018-09-10 20:14:26,223 INFO - Loss: = 0.044
+2018-09-10 20:14:27,079 INFO - Loss: = 0.044
+2018-09-10 20:14:27,932 INFO - Loss: = 0.035
+2018-09-10 20:14:28,780 INFO - Loss: = 0.034
+2018-09-10 20:14:29,623 INFO - Loss: = 0.038
+2018-09-10 20:14:30,470 INFO - Loss: = 0.035
+2018-09-10 20:14:31,321 INFO - Loss: = 0.036
+2018-09-10 20:14:32,179 INFO - Loss: = 0.035
+2018-09-10 20:14:33,036 INFO - Loss: = 0.039
+2018-09-10 20:14:33,878 INFO - Loss: = 0.038
+2018-09-10 20:14:34,720 INFO - Loss: = 0.033
+2018-09-10 20:14:35,556 INFO - Loss: = 0.036
+2018-09-10 20:14:36,391 INFO - Loss: = 0.038
+2018-09-10 20:14:37,231 INFO - Loss: = 0.039
+2018-09-10 20:14:38,070 INFO - Loss: = 0.040
+2018-09-10 20:14:38,187 INFO - Loss: = 0.059
+2018-09-10 20:14:38,188 INFO - EPOCH 38 ...
+2018-09-10 20:14:39,037 INFO - Loss: = 0.042
+2018-09-10 20:14:39,883 INFO - Loss: = 0.035
+2018-09-10 20:14:40,727 INFO - Loss: = 0.045
+2018-09-10 20:14:41,584 INFO - Loss: = 0.042
+2018-09-10 20:14:42,429 INFO - Loss: = 0.042
+2018-09-10 20:14:43,270 INFO - Loss: = 0.046
+2018-09-10 20:14:44,118 INFO - Loss: = 0.052
+2018-09-10 20:14:44,967 INFO - Loss: = 0.038
+2018-09-10 20:14:45,808 INFO - Loss: = 0.046
+2018-09-10 20:14:46,649 INFO - Loss: = 0.053
+2018-09-10 20:14:47,483 INFO - Loss: = 0.040
+2018-09-10 20:14:48,319 INFO - Loss: = 0.028
+2018-09-10 20:14:49,158 INFO - Loss: = 0.041
+2018-09-10 20:14:49,992 INFO - Loss: = 0.038
+2018-09-10 20:14:50,836 INFO - Loss: = 0.041
+2018-09-10 20:14:51,675 INFO - Loss: = 0.043
+2018-09-10 20:14:52,524 INFO - Loss: = 0.040
+2018-09-10 20:14:53,369 INFO - Loss: = 0.038
+2018-09-10 20:14:53,485 INFO - Loss: = 0.081
+2018-09-10 20:14:53,485 INFO - EPOCH 39 ...
+2018-09-10 20:14:54,329 INFO - Loss: = 0.036
+2018-09-10 20:14:55,175 INFO - Loss: = 0.047
+2018-09-10 20:14:56,026 INFO - Loss: = 0.047
+2018-09-10 20:14:56,859 INFO - Loss: = 0.042
+2018-09-10 20:14:57,699 INFO - Loss: = 0.047
+2018-09-10 20:14:58,547 INFO - Loss: = 0.042
+2018-09-10 20:14:59,387 INFO - Loss: = 0.040
+2018-09-10 20:15:00,234 INFO - Loss: = 0.044
+2018-09-10 20:15:01,070 INFO - Loss: = 0.038
+2018-09-10 20:15:01,907 INFO - Loss: = 0.038
+2018-09-10 20:15:02,755 INFO - Loss: = 0.043
+2018-09-10 20:15:03,598 INFO - Loss: = 0.032
+2018-09-10 20:15:04,432 INFO - Loss: = 0.035
+2018-09-10 20:15:05,271 INFO - Loss: = 0.037
+2018-09-10 20:15:06,117 INFO - Loss: = 0.030
+2018-09-10 20:15:06,952 INFO - Loss: = 0.043
+2018-09-10 20:15:07,794 INFO - Loss: = 0.037
+2018-09-10 20:15:08,629 INFO - Loss: = 0.039
+2018-09-10 20:15:08,746 INFO - Loss: = 0.011
+2018-09-10 20:15:08,746 INFO - EPOCH 40 ...
+2018-09-10 20:15:09,580 INFO - Loss: = 0.039
+2018-09-10 20:15:10,429 INFO - Loss: = 0.033
+2018-09-10 20:15:11,280 INFO - Loss: = 0.036
+2018-09-10 20:15:12,125 INFO - Loss: = 0.042
+2018-09-10 20:15:12,966 INFO - Loss: = 0.030
+2018-09-10 20:15:13,798 INFO - Loss: = 0.041
+2018-09-10 20:15:14,640 INFO - Loss: = 0.041
+2018-09-10 20:15:15,475 INFO - Loss: = 0.036
+2018-09-10 20:15:16,309 INFO - Loss: = 0.041
+2018-09-10 20:15:17,149 INFO - Loss: = 0.032
+2018-09-10 20:15:17,985 INFO - Loss: = 0.038
+2018-09-10 20:15:18,822 INFO - Loss: = 0.042
+2018-09-10 20:15:19,674 INFO - Loss: = 0.031
+2018-09-10 20:15:20,532 INFO - Loss: = 0.028
+2018-09-10 20:15:21,364 INFO - Loss: = 0.047
+2018-09-10 20:15:22,206 INFO - Loss: = 0.037
+2018-09-10 20:15:23,050 INFO - Loss: = 0.040
+2018-09-10 20:15:23,881 INFO - Loss: = 0.031
+2018-09-10 20:15:23,998 INFO - Loss: = 0.074
+2018-09-10 20:15:23,998 INFO - EPOCH 41 ...
+2018-09-10 20:15:24,841 INFO - Loss: = 0.042
+2018-09-10 20:15:25,687 INFO - Loss: = 0.049
+2018-09-10 20:15:26,522 INFO - Loss: = 0.038
+2018-09-10 20:15:27,369 INFO - Loss: = 0.047
+2018-09-10 20:15:28,208 INFO - Loss: = 0.046
+2018-09-10 20:15:29,054 INFO - Loss: = 0.045
+2018-09-10 20:15:29,893 INFO - Loss: = 0.030
+2018-09-10 20:15:30,731 INFO - Loss: = 0.037
+2018-09-10 20:15:31,576 INFO - Loss: = 0.035
+2018-09-10 20:15:32,418 INFO - Loss: = 0.032
+2018-09-10 20:15:33,253 INFO - Loss: = 0.040
+2018-09-10 20:15:34,086 INFO - Loss: = 0.042
+2018-09-10 20:15:34,935 INFO - Loss: = 0.041
+2018-09-10 20:15:35,773 INFO - Loss: = 0.044
+2018-09-10 20:15:36,616 INFO - Loss: = 0.036
+2018-09-10 20:15:37,459 INFO - Loss: = 0.037
+2018-09-10 20:15:38,305 INFO - Loss: = 0.038
+2018-09-10 20:15:39,141 INFO - Loss: = 0.046
+2018-09-10 20:15:39,260 INFO - Loss: = 0.041
+2018-09-10 20:15:39,261 INFO - EPOCH 42 ...
+2018-09-10 20:15:40,107 INFO - Loss: = 0.033
+2018-09-10 20:15:40,952 INFO - Loss: = 0.039
+2018-09-10 20:15:41,798 INFO - Loss: = 0.042
+2018-09-10 20:15:42,646 INFO - Loss: = 0.028
+2018-09-10 20:15:43,489 INFO - Loss: = 0.039
+2018-09-10 20:15:44,334 INFO - Loss: = 0.049
+2018-09-10 20:15:45,171 INFO - Loss: = 0.041
+2018-09-10 20:15:46,004 INFO - Loss: = 0.039
+2018-09-10 20:15:46,845 INFO - Loss: = 0.040
+2018-09-10 20:15:47,682 INFO - Loss: = 0.040
+2018-09-10 20:15:48,527 INFO - Loss: = 0.032
+2018-09-10 20:15:49,361 INFO - Loss: = 0.029
+2018-09-10 20:15:50,206 INFO - Loss: = 0.045
+2018-09-10 20:15:51,040 INFO - Loss: = 0.036
+2018-09-10 20:15:51,881 INFO - Loss: = 0.040
+2018-09-10 20:15:52,716 INFO - Loss: = 0.036
+2018-09-10 20:15:53,556 INFO - Loss: = 0.038
+2018-09-10 20:15:54,391 INFO - Loss: = 0.047
+2018-09-10 20:15:54,506 INFO - Loss: = 0.030
+2018-09-10 20:15:54,507 INFO - EPOCH 43 ...
+2018-09-10 20:15:55,355 INFO - Loss: = 0.033
+2018-09-10 20:15:56,213 INFO - Loss: = 0.038
+2018-09-10 20:15:57,048 INFO - Loss: = 0.039
+2018-09-10 20:15:57,884 INFO - Loss: = 0.038
+2018-09-10 20:15:58,746 INFO - Loss: = 0.040
+2018-09-10 20:15:59,603 INFO - Loss: = 0.033
+2018-09-10 20:16:00,442 INFO - Loss: = 0.030
+2018-09-10 20:16:01,295 INFO - Loss: = 0.034
+2018-09-10 20:16:02,143 INFO - Loss: = 0.030
+2018-09-10 20:16:03,001 INFO - Loss: = 0.041
+2018-09-10 20:16:03,852 INFO - Loss: = 0.041
+2018-09-10 20:16:04,707 INFO - Loss: = 0.042
+2018-09-10 20:16:05,541 INFO - Loss: = 0.036
+2018-09-10 20:16:06,374 INFO - Loss: = 0.031
+2018-09-10 20:16:07,222 INFO - Loss: = 0.036
+2018-09-10 20:16:08,061 INFO - Loss: = 0.039
+2018-09-10 20:16:08,899 INFO - Loss: = 0.033
+2018-09-10 20:16:09,745 INFO - Loss: = 0.033
+2018-09-10 20:16:09,862 INFO - Loss: = 0.043
+2018-09-10 20:16:09,862 INFO - EPOCH 44 ...
+2018-09-10 20:16:10,708 INFO - Loss: = 0.042
+2018-09-10 20:16:11,547 INFO - Loss: = 0.027
+2018-09-10 20:16:12,388 INFO - Loss: = 0.031
+2018-09-10 20:16:13,232 INFO - Loss: = 0.039
+2018-09-10 20:16:14,077 INFO - Loss: = 0.040
+2018-09-10 20:16:14,918 INFO - Loss: = 0.034
+2018-09-10 20:16:15,765 INFO - Loss: = 0.034
+2018-09-10 20:16:16,605 INFO - Loss: = 0.042
+2018-09-10 20:16:17,459 INFO - Loss: = 0.033
+2018-09-10 20:16:18,292 INFO - Loss: = 0.034
+2018-09-10 20:16:19,126 INFO - Loss: = 0.039
+2018-09-10 20:16:19,972 INFO - Loss: = 0.030
+2018-09-10 20:16:20,814 INFO - Loss: = 0.036
+2018-09-10 20:16:21,650 INFO - Loss: = 0.047
+2018-09-10 20:16:22,485 INFO - Loss: = 0.033
+2018-09-10 20:16:23,327 INFO - Loss: = 0.034
+2018-09-10 20:16:24,161 INFO - Loss: = 0.040
+2018-09-10 20:16:25,007 INFO - Loss: = 0.025
+2018-09-10 20:16:25,123 INFO - Loss: = 0.028
+2018-09-10 20:16:25,124 INFO - EPOCH 45 ...
+2018-09-10 20:16:25,969 INFO - Loss: = 0.035
+2018-09-10 20:16:26,826 INFO - Loss: = 0.035
+2018-09-10 20:16:27,671 INFO - Loss: = 0.043
+2018-09-10 20:16:28,514 INFO - Loss: = 0.032
+2018-09-10 20:16:29,364 INFO - Loss: = 0.035
+2018-09-10 20:16:30,218 INFO - Loss: = 0.032
+2018-09-10 20:16:31,065 INFO - Loss: = 0.033
+2018-09-10 20:16:31,908 INFO - Loss: = 0.043
+2018-09-10 20:16:32,749 INFO - Loss: = 0.035
+2018-09-10 20:16:33,600 INFO - Loss: = 0.034
+2018-09-10 20:16:34,456 INFO - Loss: = 0.039
+2018-09-10 20:16:35,300 INFO - Loss: = 0.035
+2018-09-10 20:16:36,149 INFO - Loss: = 0.037
+2018-09-10 20:16:36,984 INFO - Loss: = 0.029
+2018-09-10 20:16:37,818 INFO - Loss: = 0.031
+2018-09-10 20:16:38,659 INFO - Loss: = 0.027
+2018-09-10 20:16:39,494 INFO - Loss: = 0.030
+2018-09-10 20:16:40,335 INFO - Loss: = 0.036
+2018-09-10 20:16:40,451 INFO - Loss: = 0.026
+2018-09-10 20:16:40,451 INFO - EPOCH 46 ...
+2018-09-10 20:16:41,295 INFO - Loss: = 0.039
+2018-09-10 20:16:42,137 INFO - Loss: = 0.031
+2018-09-10 20:16:42,968 INFO - Loss: = 0.027
+2018-09-10 20:16:43,811 INFO - Loss: = 0.025
+2018-09-10 20:16:44,646 INFO - Loss: = 0.027
+2018-09-10 20:16:45,486 INFO - Loss: = 0.034
+2018-09-10 20:16:46,327 INFO - Loss: = 0.027
+2018-09-10 20:16:47,173 INFO - Loss: = 0.033
+2018-09-10 20:16:48,006 INFO - Loss: = 0.037
+2018-09-10 20:16:48,840 INFO - Loss: = 0.036
+2018-09-10 20:16:49,680 INFO - Loss: = 0.032
+2018-09-10 20:16:50,518 INFO - Loss: = 0.035
+2018-09-10 20:16:51,365 INFO - Loss: = 0.029
+2018-09-10 20:16:52,210 INFO - Loss: = 0.027
+2018-09-10 20:16:53,046 INFO - Loss: = 0.035
+2018-09-10 20:16:53,886 INFO - Loss: = 0.026
+2018-09-10 20:16:54,722 INFO - Loss: = 0.034
+2018-09-10 20:16:55,565 INFO - Loss: = 0.031
+2018-09-10 20:16:55,682 INFO - Loss: = 0.039
+2018-09-10 20:16:55,683 INFO - EPOCH 47 ...
+2018-09-10 20:16:56,525 INFO - Loss: = 0.034
+2018-09-10 20:16:57,368 INFO - Loss: = 0.029
+2018-09-10 20:16:58,200 INFO - Loss: = 0.036
+2018-09-10 20:16:59,057 INFO - Loss: = 0.030
+2018-09-10 20:16:59,911 INFO - Loss: = 0.044
+2018-09-10 20:17:00,767 INFO - Loss: = 0.034
+2018-09-10 20:17:01,602 INFO - Loss: = 0.027
+2018-09-10 20:17:02,434 INFO - Loss: = 0.034
+2018-09-10 20:17:03,276 INFO - Loss: = 0.036
+2018-09-10 20:17:04,119 INFO - Loss: = 0.030
+2018-09-10 20:17:04,952 INFO - Loss: = 0.039
+2018-09-10 20:17:05,788 INFO - Loss: = 0.028
+2018-09-10 20:17:06,631 INFO - Loss: = 0.034
+2018-09-10 20:17:07,470 INFO - Loss: = 0.038
+2018-09-10 20:17:08,309 INFO - Loss: = 0.038
+2018-09-10 20:17:09,144 INFO - Loss: = 0.035
+2018-09-10 20:17:09,980 INFO - Loss: = 0.038
+2018-09-10 20:17:10,820 INFO - Loss: = 0.036
+2018-09-10 20:17:10,937 INFO - Loss: = 0.043
+2018-09-10 20:17:10,937 INFO - EPOCH 48 ...
+2018-09-10 20:17:11,777 INFO - Loss: = 0.043
+2018-09-10 20:17:12,625 INFO - Loss: = 0.032
+2018-09-10 20:17:13,463 INFO - Loss: = 0.036
+2018-09-10 20:17:14,298 INFO - Loss: = 0.035
+2018-09-10 20:17:15,140 INFO - Loss: = 0.036
+2018-09-10 20:17:15,985 INFO - Loss: = 0.037
+2018-09-10 20:17:16,824 INFO - Loss: = 0.040
+2018-09-10 20:17:17,671 INFO - Loss: = 0.043
+2018-09-10 20:17:18,517 INFO - Loss: = 0.040
+2018-09-10 20:17:19,364 INFO - Loss: = 0.033
+2018-09-10 20:17:20,209 INFO - Loss: = 0.037
+2018-09-10 20:17:21,051 INFO - Loss: = 0.033
+2018-09-10 20:17:21,885 INFO - Loss: = 0.028
+2018-09-10 20:17:22,727 INFO - Loss: = 0.038
+2018-09-10 20:17:23,565 INFO - Loss: = 0.039
+2018-09-10 20:17:24,406 INFO - Loss: = 0.038
+2018-09-10 20:17:25,247 INFO - Loss: = 0.021
+2018-09-10 20:17:26,085 INFO - Loss: = 0.031
+2018-09-10 20:17:26,202 INFO - Loss: = 0.021
+2018-09-10 20:17:26,203 INFO - EPOCH 49 ...
+2018-09-10 20:17:27,046 INFO - Loss: = 0.027
+2018-09-10 20:17:27,888 INFO - Loss: = 0.043
+2018-09-10 20:17:28,733 INFO - Loss: = 0.040
+2018-09-10 20:17:29,578 INFO - Loss: = 0.043
+2018-09-10 20:17:30,413 INFO - Loss: = 0.054
+2018-09-10 20:17:31,255 INFO - Loss: = 0.039
+2018-09-10 20:17:32,096 INFO - Loss: = 0.046
+2018-09-10 20:17:32,938 INFO - Loss: = 0.036
+2018-09-10 20:17:33,775 INFO - Loss: = 0.043
+2018-09-10 20:17:34,608 INFO - Loss: = 0.041
+2018-09-10 20:17:35,456 INFO - Loss: = 0.038
+2018-09-10 20:17:36,292 INFO - Loss: = 0.066
+2018-09-10 20:17:37,134 INFO - Loss: = 0.035
+2018-09-10 20:17:37,977 INFO - Loss: = 0.045
+2018-09-10 20:17:38,823 INFO - Loss: = 0.041
+2018-09-10 20:17:39,675 INFO - Loss: = 0.038
+2018-09-10 20:17:40,523 INFO - Loss: = 0.049
+2018-09-10 20:17:41,383 INFO - Loss: = 0.058
+2018-09-10 20:17:41,504 INFO - Loss: = 0.038
+2018-09-10 20:17:41,504 INFO - EPOCH 50 ...
+2018-09-10 20:17:42,352 INFO - Loss: = 0.041
+2018-09-10 20:17:43,188 INFO - Loss: = 0.043
+2018-09-10 20:17:44,030 INFO - Loss: = 0.038
+2018-09-10 20:17:44,872 INFO - Loss: = 0.049
+2018-09-10 20:17:45,711 INFO - Loss: = 0.042
+2018-09-10 20:17:46,550 INFO - Loss: = 0.053
+2018-09-10 20:17:47,397 INFO - Loss: = 0.053
+2018-09-10 20:17:48,235 INFO - Loss: = 0.044
+2018-09-10 20:17:49,072 INFO - Loss: = 0.044
+2018-09-10 20:17:49,915 INFO - Loss: = 0.053
+2018-09-10 20:17:50,761 INFO - Loss: = 0.038
+2018-09-10 20:17:51,599 INFO - Loss: = 0.031
+2018-09-10 20:17:52,446 INFO - Loss: = 0.046
+2018-09-10 20:17:53,299 INFO - Loss: = 0.048
+2018-09-10 20:17:54,155 INFO - Loss: = 0.061
+2018-09-10 20:17:54,989 INFO - Loss: = 0.050
+2018-09-10 20:17:55,831 INFO - Loss: = 0.039
+2018-09-10 20:17:56,665 INFO - Loss: = 0.046
+2018-09-10 20:17:56,782 INFO - Loss: = 0.084
+2018-09-10 20:17:56,782 INFO - EPOCH 51 ...
+2018-09-10 20:17:57,627 INFO - Loss: = 0.049
+2018-09-10 20:17:58,470 INFO - Loss: = 0.074
+2018-09-10 20:17:59,308 INFO - Loss: = 0.053
+2018-09-10 20:18:00,144 INFO - Loss: = 0.048
+2018-09-10 20:18:00,987 INFO - Loss: = 0.074
+2018-09-10 20:18:01,828 INFO - Loss: = 0.052
+2018-09-10 20:18:02,663 INFO - Loss: = 0.053
+2018-09-10 20:18:03,503 INFO - Loss: = 0.083
+2018-09-10 20:18:04,346 INFO - Loss: = 0.049
+2018-09-10 20:18:05,187 INFO - Loss: = 0.069
+2018-09-10 20:18:06,021 INFO - Loss: = 0.056
+2018-09-10 20:18:06,855 INFO - Loss: = 0.056
+2018-09-10 20:18:07,697 INFO - Loss: = 0.047
+2018-09-10 20:18:08,530 INFO - Loss: = 0.051
+2018-09-10 20:18:09,371 INFO - Loss: = 0.035
+2018-09-10 20:18:10,214 INFO - Loss: = 0.049
+2018-09-10 20:18:11,046 INFO - Loss: = 0.059
+2018-09-10 20:18:11,886 INFO - Loss: = 0.037
+2018-09-10 20:18:12,006 INFO - Loss: = 0.055
+2018-09-10 20:18:12,006 INFO - EPOCH 52 ...
+2018-09-10 20:18:12,854 INFO - Loss: = 0.066
+2018-09-10 20:18:13,713 INFO - Loss: = 0.054
+2018-09-10 20:18:14,563 INFO - Loss: = 0.054
+2018-09-10 20:18:15,411 INFO - Loss: = 0.059
+2018-09-10 20:18:16,264 INFO - Loss: = 0.051
+2018-09-10 20:18:17,107 INFO - Loss: = 0.040
+2018-09-10 20:18:17,943 INFO - Loss: = 0.056
+2018-09-10 20:18:18,782 INFO - Loss: = 0.041
+2018-09-10 20:18:19,618 INFO - Loss: = 0.047
+2018-09-10 20:18:20,450 INFO - Loss: = 0.040
+2018-09-10 20:18:21,299 INFO - Loss: = 0.041
+2018-09-10 20:18:22,143 INFO - Loss: = 0.044
+2018-09-10 20:18:22,987 INFO - Loss: = 0.040
+2018-09-10 20:18:23,841 INFO - Loss: = 0.029
+2018-09-10 20:18:24,687 INFO - Loss: = 0.036
+2018-09-10 20:18:25,539 INFO - Loss: = 0.039
+2018-09-10 20:18:26,380 INFO - Loss: = 0.031
+2018-09-10 20:18:27,221 INFO - Loss: = 0.042
+2018-09-10 20:18:27,336 INFO - Loss: = 0.085
+2018-09-10 20:18:27,337 INFO - EPOCH 53 ...
+2018-09-10 20:18:28,176 INFO - Loss: = 0.035
+2018-09-10 20:18:29,023 INFO - Loss: = 0.039
+2018-09-10 20:18:29,870 INFO - Loss: = 0.039
+2018-09-10 20:18:30,706 INFO - Loss: = 0.045
+2018-09-10 20:18:31,542 INFO - Loss: = 0.029
+2018-09-10 20:18:32,389 INFO - Loss: = 0.050
+2018-09-10 20:18:33,227 INFO - Loss: = 0.036
+2018-09-10 20:18:34,066 INFO - Loss: = 0.037
+2018-09-10 20:18:34,912 INFO - Loss: = 0.033
+2018-09-10 20:18:35,754 INFO - Loss: = 0.031
+2018-09-10 20:18:36,604 INFO - Loss: = 0.030
+2018-09-10 20:18:37,442 INFO - Loss: = 0.036
+2018-09-10 20:18:38,287 INFO - Loss: = 0.036
+2018-09-10 20:18:39,125 INFO - Loss: = 0.032
+2018-09-10 20:18:39,970 INFO - Loss: = 0.040
+2018-09-10 20:18:40,813 INFO - Loss: = 0.043
+2018-09-10 20:18:41,657 INFO - Loss: = 0.033
+2018-09-10 20:18:42,502 INFO - Loss: = 0.037
+2018-09-10 20:18:42,620 INFO - Loss: = 0.080
+2018-09-10 20:18:42,620 INFO - EPOCH 54 ...
+2018-09-10 20:18:43,468 INFO - Loss: = 0.041
+2018-09-10 20:18:44,312 INFO - Loss: = 0.043
+2018-09-10 20:18:45,147 INFO - Loss: = 0.044
+2018-09-10 20:18:45,991 INFO - Loss: = 0.035
+2018-09-10 20:18:46,831 INFO - Loss: = 0.039
+2018-09-10 20:18:47,672 INFO - Loss: = 0.037
+2018-09-10 20:18:48,507 INFO - Loss: = 0.036
+2018-09-10 20:18:49,348 INFO - Loss: = 0.036
+2018-09-10 20:18:50,181 INFO - Loss: = 0.027
+2018-09-10 20:18:51,026 INFO - Loss: = 0.041
+2018-09-10 20:18:51,873 INFO - Loss: = 0.039
+2018-09-10 20:18:52,711 INFO - Loss: = 0.045
+2018-09-10 20:18:53,549 INFO - Loss: = 0.037
+2018-09-10 20:18:54,393 INFO - Loss: = 0.027
+2018-09-10 20:18:55,238 INFO - Loss: = 0.024
+2018-09-10 20:18:56,084 INFO - Loss: = 0.041
+2018-09-10 20:18:56,924 INFO - Loss: = 0.035
+2018-09-10 20:18:57,760 INFO - Loss: = 0.035
+2018-09-10 20:18:57,876 INFO - Loss: = 0.022
+2018-09-10 20:18:57,876 INFO - EPOCH 55 ...
+2018-09-10 20:18:58,720 INFO - Loss: = 0.034
+2018-09-10 20:18:59,561 INFO - Loss: = 0.030
+2018-09-10 20:19:00,403 INFO - Loss: = 0.021
+2018-09-10 20:19:01,237 INFO - Loss: = 0.033
+2018-09-10 20:19:02,079 INFO - Loss: = 0.028
+2018-09-10 20:19:02,922 INFO - Loss: = 0.040
+2018-09-10 20:19:03,755 INFO - Loss: = 0.041
+2018-09-10 20:19:04,593 INFO - Loss: = 0.031
+2018-09-10 20:19:05,435 INFO - Loss: = 0.030
+2018-09-10 20:19:06,271 INFO - Loss: = 0.035
+2018-09-10 20:19:07,104 INFO - Loss: = 0.026
+2018-09-10 20:19:07,945 INFO - Loss: = 0.039
+2018-09-10 20:19:08,788 INFO - Loss: = 0.026
+2018-09-10 20:19:09,623 INFO - Loss: = 0.032
+2018-09-10 20:19:10,466 INFO - Loss: = 0.036
+2018-09-10 20:19:11,305 INFO - Loss: = 0.023
+2018-09-10 20:19:12,151 INFO - Loss: = 0.028
+2018-09-10 20:19:12,988 INFO - Loss: = 0.034
+2018-09-10 20:19:13,106 INFO - Loss: = 0.036
+2018-09-10 20:19:13,106 INFO - EPOCH 56 ...
+2018-09-10 20:19:13,958 INFO - Loss: = 0.027
+2018-09-10 20:19:14,813 INFO - Loss: = 0.032
+2018-09-10 20:19:15,652 INFO - Loss: = 0.031
+2018-09-10 20:19:16,487 INFO - Loss: = 0.028
+2018-09-10 20:19:17,330 INFO - Loss: = 0.030
+2018-09-10 20:19:18,173 INFO - Loss: = 0.025
+2018-09-10 20:19:19,008 INFO - Loss: = 0.030
+2018-09-10 20:19:19,852 INFO - Loss: = 0.040
+2018-09-10 20:19:20,693 INFO - Loss: = 0.031
+2018-09-10 20:19:21,536 INFO - Loss: = 0.025
+2018-09-10 20:19:22,387 INFO - Loss: = 0.026
+2018-09-10 20:19:23,241 INFO - Loss: = 0.037
+2018-09-10 20:19:24,087 INFO - Loss: = 0.031
+2018-09-10 20:19:24,933 INFO - Loss: = 0.033
+2018-09-10 20:19:25,771 INFO - Loss: = 0.030
+2018-09-10 20:19:26,622 INFO - Loss: = 0.027
+2018-09-10 20:19:27,484 INFO - Loss: = 0.029
+2018-09-10 20:19:28,344 INFO - Loss: = 0.028
+2018-09-10 20:19:28,462 INFO - Loss: = 0.041
+2018-09-10 20:19:28,462 INFO - EPOCH 57 ...
+2018-09-10 20:19:29,307 INFO - Loss: = 0.033
+2018-09-10 20:19:30,148 INFO - Loss: = 0.039
+2018-09-10 20:19:30,996 INFO - Loss: = 0.031
+2018-09-10 20:19:31,841 INFO - Loss: = 0.027
+2018-09-10 20:19:32,676 INFO - Loss: = 0.029
+2018-09-10 20:19:33,516 INFO - Loss: = 0.027
+2018-09-10 20:19:34,356 INFO - Loss: = 0.035
+2018-09-10 20:19:35,201 INFO - Loss: = 0.025
+2018-09-10 20:19:36,047 INFO - Loss: = 0.032
+2018-09-10 20:19:36,889 INFO - Loss: = 0.034
+2018-09-10 20:19:37,730 INFO - Loss: = 0.032
+2018-09-10 20:19:38,573 INFO - Loss: = 0.029
+2018-09-10 20:19:39,409 INFO - Loss: = 0.025
+2018-09-10 20:19:40,254 INFO - Loss: = 0.037
+2018-09-10 20:19:41,090 INFO - Loss: = 0.029
+2018-09-10 20:19:41,934 INFO - Loss: = 0.028
+2018-09-10 20:19:42,785 INFO - Loss: = 0.027
+2018-09-10 20:19:43,631 INFO - Loss: = 0.026
+2018-09-10 20:19:43,747 INFO - Loss: = 0.017
+2018-09-10 20:19:43,747 INFO - EPOCH 58 ...
+2018-09-10 20:19:44,592 INFO - Loss: = 0.028
+2018-09-10 20:19:45,443 INFO - Loss: = 0.032
+2018-09-10 20:19:46,302 INFO - Loss: = 0.033
+2018-09-10 20:19:47,155 INFO - Loss: = 0.028
+2018-09-10 20:19:48,004 INFO - Loss: = 0.026
+2018-09-10 20:19:48,836 INFO - Loss: = 0.028
+2018-09-10 20:19:49,686 INFO - Loss: = 0.024
+2018-09-10 20:19:50,522 INFO - Loss: = 0.023
+2018-09-10 20:19:51,369 INFO - Loss: = 0.030
+2018-09-10 20:19:52,212 INFO - Loss: = 0.026
+2018-09-10 20:19:53,059 INFO - Loss: = 0.027
+2018-09-10 20:19:53,892 INFO - Loss: = 0.028
+2018-09-10 20:19:54,735 INFO - Loss: = 0.030
+2018-09-10 20:19:55,571 INFO - Loss: = 0.030
+2018-09-10 20:19:56,410 INFO - Loss: = 0.024
+2018-09-10 20:19:57,245 INFO - Loss: = 0.029
+2018-09-10 20:19:58,085 INFO - Loss: = 0.031
+2018-09-10 20:19:58,921 INFO - Loss: = 0.027
+2018-09-10 20:19:59,040 INFO - Loss: = 0.022
+2018-09-10 20:19:59,040 INFO - EPOCH 59 ...
+2018-09-10 20:19:59,891 INFO - Loss: = 0.026
+2018-09-10 20:20:00,737 INFO - Loss: = 0.027
+2018-09-10 20:20:01,578 INFO - Loss: = 0.032
+2018-09-10 20:20:02,428 INFO - Loss: = 0.025
+2018-09-10 20:20:03,266 INFO - Loss: = 0.023
+2018-09-10 20:20:04,111 INFO - Loss: = 0.027
+2018-09-10 20:20:04,946 INFO - Loss: = 0.026
+2018-09-10 20:20:05,786 INFO - Loss: = 0.025
+2018-09-10 20:20:06,626 INFO - Loss: = 0.030
+2018-09-10 20:20:07,460 INFO - Loss: = 0.030
+2018-09-10 20:20:08,300 INFO - Loss: = 0.030
+2018-09-10 20:20:09,134 INFO - Loss: = 0.032
+2018-09-10 20:20:09,968 INFO - Loss: = 0.025
+2018-09-10 20:20:10,801 INFO - Loss: = 0.027
+2018-09-10 20:20:11,643 INFO - Loss: = 0.028
+2018-09-10 20:20:12,492 INFO - Loss: = 0.028
+2018-09-10 20:20:13,331 INFO - Loss: = 0.024
+2018-09-10 20:20:14,163 INFO - Loss: = 0.026
+2018-09-10 20:20:14,280 INFO - Loss: = 0.030
+2018-09-10 20:20:14,280 INFO - EPOCH 60 ...
+2018-09-10 20:20:15,127 INFO - Loss: = 0.025
+2018-09-10 20:20:15,974 INFO - Loss: = 0.025
+2018-09-10 20:20:16,812 INFO - Loss: = 0.022
+2018-09-10 20:20:17,658 INFO - Loss: = 0.031
+2018-09-10 20:20:18,506 INFO - Loss: = 0.026
+2018-09-10 20:20:19,350 INFO - Loss: = 0.030
+2018-09-10 20:20:20,193 INFO - Loss: = 0.025
+2018-09-10 20:20:21,028 INFO - Loss: = 0.025
+2018-09-10 20:20:21,869 INFO - Loss: = 0.026
+2018-09-10 20:20:22,711 INFO - Loss: = 0.028
+2018-09-10 20:20:23,554 INFO - Loss: = 0.034
+2018-09-10 20:20:24,396 INFO - Loss: = 0.026
+2018-09-10 20:20:25,243 INFO - Loss: = 0.030
+2018-09-10 20:20:26,088 INFO - Loss: = 0.023
+2018-09-10 20:20:26,937 INFO - Loss: = 0.025
+2018-09-10 20:20:27,794 INFO - Loss: = 0.024
+2018-09-10 20:20:28,637 INFO - Loss: = 0.028
+2018-09-10 20:20:29,480 INFO - Loss: = 0.024
+2018-09-10 20:20:29,596 INFO - Loss: = 0.008
+2018-09-10 20:20:29,597 INFO - 
+2018-09-10 20:20:29,597 INFO - Training Finished. Saving test images to: ./runs/1536636029.5962183
+2018-09-10 20:21:14,851 INFO - 
+################################################################################
+
+2018-09-10 20:21:14,851 INFO - Shutting down task.
+2018-09-10 20:21:15,361 INFO - [shutdown] Task execution cancelled after None seconds for TaskInstance <TaskInstance: hc167/projects/lanedetection/5 (id: nNzv4xy4jvwDJ55pyuXnV4)
+2018-09-10 20:21:15,379 INFO - Creating data module for output...
+2018-09-10 20:21:15,619 INFO - Data module created for output.
+2018-09-10 20:21:15,619 INFO - Persisting data in home...
+2018-09-10 20:22:10,194 INFO - Home data persisted.
