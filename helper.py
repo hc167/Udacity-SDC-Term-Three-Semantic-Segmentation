@@ -33,8 +33,7 @@ def maybe_download_pretrained_vgg(data_dir):
         os.path.join(vgg_path, 'variables/variables.index'),
         os.path.join(vgg_path, 'saved_model.pb')]
 
-    missing_vgg_files = [vgg_file for vgg_file in vgg_files if not os.path.exists(vgg_file)]
-    if missing_vgg_files:
+    if missing_vgg_files := [vgg_file for vgg_file in vgg_files if not os.path.exists(vgg_file)]:
         # Clean vgg dir
         if os.path.exists(vgg_path):
             shutil.rmtree(vgg_path)
